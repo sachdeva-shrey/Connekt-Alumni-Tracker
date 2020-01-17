@@ -1,41 +1,106 @@
-body{
-    background-color: rgb(212, 212, 212);
-    padding-top: 100px;
-    padding-bottom: 100px;
+:root {
+  --primary-color-dark: #323A47;
+  --background-color: #F9F9F9;
+  --primary-blue: #727CF5;
 }
-.login-box{
-    background-color: white;
-    padding:50px;
-    border-radius: 25px;
-    margin: 0 auto;
-    position: relative;
+
+@font-face {
+  font-family: 'Bahnschrift';
+  src: url(../../assets/fonts/bahnschrift.ttf);
 }
-.login-box .alumni-reg-heading{
-    border-left: 4px solid #727CF5;
-    padding-left: 30px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+
+@font-face {
+  font-family: 'SF-UI';
+  src: url(../../assets/fonts/SF-UI-Display-Regular.otf);
 }
-.official-login{
-    margin: 50% auto;
+
+body {
+  background-color: #F9F9F9;
+
 }
-.slider{
-    background-color: #727CF5;
-    position: absolute;
-    top: 0;
-    height: 100%;
-    z-index: 10;
-    width: 35%;
-    transition-duration: 1s;
-    left: 65%;
-    border-radius: 25px;
+
+label {
+  font-family: 'SF-UI';
+  font-size: 12px;
+  color: #323A47;
 }
-.register-font{
-    margin-top: 300px;
-    font-size: 38px;
-    color: white;
+
+.container {
+  padding-top: 20px;
 }
-.slider h6{
-    color: gray;
-    margin: 0px 0px;
+
+.login-box {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 25px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.alumni-reg-heading {
+  font-size: 30px;
+  font-family: 'Bahnschrift';
+  padding-bottom: 30px !important;
+}
+
+.form-control {
+  width: 90%;
+}
+
+input:focus {
+  outline: none !important;
+  border: 1px solid #727CF5;
+  box-shadow: 0 0 2px #323A47;
+}
+
+.login-box .alumni-reg-heading {
+  border-left: 4px solid #727CF5;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.official-login {
+  margin: 50% auto;
+}
+
+.slider {
+  background-color: #727CF5;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  z-index: 10;
+  width: 35%;
+  transition-duration: 1s;
+  left: 65%;
+  border-radius: 25px;
+}
+
+.register-font {
+  margin-top: 300px;
+  font-size: 30px;
+  color: white;
+  font-family: 'Bahnschrift';
+}
+
+.slider h6 {
+  color: #fff;
+  margin: 0px 0px;
+
+}
+
+h6 {
+  font-size: 14px !important;
+  font-family: 'SF-UI';
+  color: #323A47;
+  padding-top: 10px;
+}
+
+button[type="submit"] {
+  background-color: #727CF5;
+  border: none;
+  width: 90%;
+  margin-top: 20px;
+  font-family: 'SF-UI';
+  letter-spacing: 1px;
 }
