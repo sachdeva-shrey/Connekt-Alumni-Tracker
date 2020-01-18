@@ -45,19 +45,13 @@
 								<div class="col-md-6">
 									<div class="form-group">
 										<label for="course">Course</label>
-										<select class="form-control" id="course" formControlName="course">
-                                            <option value="BTECH">Btech</option>
-                                            <option value="BPHARM">Bpharm</option>
-										</select>
+                                        <input type="text" class="form-control" id="course" formControlName="course">
 									</div>
 								</div>
 								<div class="col-md-5 colno2">
 									<div class="form-group">
 										<label for="year">Year</label>
-										<select class="form-control" id="year" formControlName="year">
-											<option>2000</option>
-											<option>3001</option>
-										</select>
+                                        <input type="text" class="form-control" id="year" formControlName="year">
 									</div>
 								</div>
 
@@ -79,16 +73,16 @@
 				</div>
 				<div class="col-4">
                     <h1 class="alumni-reg-heading">Alumni Login</h1>
-					<form class="official-login">
+					<form class="official-login" [formGroup]="loginform">
 						<div class="form-group">
 						    <label for="alumni-email">Email address</label>
-						    <input type="email" class="form-control" id="alumni-email">
+						    <input type="email" class="form-control" id="alumniemail" formControlName="alumniemail">
 						</div>
 						<div class="form-group">
 						    <label for="alumni-password">Password</label>
-						    <input type="password" class="form-control" id="alumni-password">
+						    <input type="text" class="form-control" id="alumnipassword" formControlName="alumnipassword">
 						</div>
-						<button type="submit" class="btn btn-primary">Submit</button>
+						<button type="submit" (click)="Signin(loginform)" class="btn btn-primary">Submit</button>
 					</form>
 				</div>
 			</div>

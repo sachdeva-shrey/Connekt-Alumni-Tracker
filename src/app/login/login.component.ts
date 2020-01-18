@@ -10,10 +10,10 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
     addDocumentForm:FormGroup;
-    constructor(
-      private _documentService : DocumentService,
-      private router : Router
-    ) { }
+    loginform : FormGroup;
+    constructor(      private _documentService : DocumentService,      private router : Router    ) { 
+
+    }
   
     ngOnInit() {
       this.addDocumentForm = new FormGroup ({
@@ -26,28 +26,39 @@ export class LoginComponent implements OnInit {
         uemail: new FormControl (null, [Validators.required, Validators.maxLength(200)]),
         upassword: new FormControl (null, [Validators.required, Validators.maxLength(200)])
       })
+      this.loginform = new FormGroup({
+          alumniemail : new FormControl(null),
+          alumnipassword : new FormControl(null),
+      })
       
-                    $(".slider").click(function(){
-                        if($(".slider").css("left")== 0 +"px")
-                        {
-                            $(".slider").css("left","65%");
-                            $(".slider").css("width","35%");
-                            $(".register-font").html("Already a user?");
-                        }
-                        else
-                        {
-                            $(".slider").css("left","0%");
-                            $(".slider").css("width","65%");
-                            $(".register-font").html("Not registered yet?");          
-                        }
-                            });
+        $(".slider").click(function(){
+            if($(".slider").css("left")== 0 +"px")
+            {
+                $(".slider").css("left","65%");
+                $(".slider").css("width","35%");
+                $(".register-font").html("Already a user?");
+            }
+            else
+            {
+                $(".slider").css("left","0%");
+                $(".slider").css("width","65%");
+                $(".register-font").html("Not registered yet?");          
+            }
+        });
                                 
     }
   
     submitDocument(form):void{
-      this._documentService.AddDocument(form.value);
-      this.router.navigate(['adminpanel']);
+        this._documentService.AddDocument(form.value);
+        // this.router.navigate(['adminpanel']);
     }
+ 
+    Signin(form):void {
+        this._documentService.SignIn(form.value.alumniemail, form.value.alumnipassword);
+        this.router.navigate(['adminpanel']);
+    }
+
+ 
   
   }
   

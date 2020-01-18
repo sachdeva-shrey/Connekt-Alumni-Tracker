@@ -12,7 +12,7 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from "@angular/fire/firestore";
 import { environment } from 'src/environments/environment';
 import { DocumentService } from './services/document.service';
-
+import { AngularFireAuth } from "@angular/fire/auth";
   
 @NgModule({
   declarations: [
@@ -29,7 +29,7 @@ import { DocumentService } from './services/document.service';
     AngularFireModule.initializeApp(environment.firebaseConfig,'AlumniReg'),
     AngularFirestoreModule
   ],
-  providers: [DocumentService],
+  providers: [DocumentService,AngularFireAuth],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
