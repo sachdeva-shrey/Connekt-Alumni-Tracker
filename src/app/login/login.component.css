@@ -37,12 +37,6 @@ label {
   position: relative;
 }
 
-.alumni-reg-heading {
-  font-size: 30px;
-  font-family: 'Bahnschrift';
-  padding-bottom: 30px !important;
-}
-
 .form-control {
   width: 90%;
 }
@@ -54,10 +48,13 @@ input:focus {
 }
 
 .login-box .alumni-reg-heading {
-  border-left: 4px solid #727CF5;
-  padding-left: 30px;
-  padding-bottom: 10px;
-  padding-top: 10px;
+    font-size: 30px;
+    font-family: 'Bahnschrift';
+    border-left: 4px solid #727CF5;
+    padding-left: 20px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    margin-bottom: 10px;
 }
 
 .official-login {
@@ -103,4 +100,8 @@ button[type="submit"] {
   margin-top: 20px;
   font-family: 'SF-UI';
   letter-spacing: 1px;
+}
+
+.colno2 .form-group{
+    margin-right: -20px;
 }

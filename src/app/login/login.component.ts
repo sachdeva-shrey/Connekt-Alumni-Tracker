@@ -1,33 +1,53 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
+import { DocumentService } from './../services/document.service';
+import { FormGroup, FormControl, Validators, NgForm } from "@angular/forms";
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-
-    $(".slider").click(function(){
-        // var f = $(".slider").width() / $('.slider').parent().width() * 100;
-        // var ff= Math.round(f);
-        // // alert(ff);
-        if($(".slider").css("left")== 0 +"px")
-        {
-               $(".slider").css("left","65%");
-               $(".slider").css("width","35%");
-               $(".register-font").html("Are you an official?");
-        }
-        else
-        {
-               $(".slider").css("left","0%");
-               $(".slider").css("width","65%");
-               $(".register-font").html("Are you an alumnus?");          
-        }
-            });
-                 
+    addDocumentForm:FormGroup;
+    constructor(
+      private _documentService : DocumentService,
+      private router : Router
+    ) { }
+  
+    ngOnInit() {
+      this.addDocumentForm = new FormGroup ({
+        firstname: new FormControl (null, [Validators.required, Validators.maxLength(200)]),
+        lastname: new FormControl (null, [Validators.required, Validators.maxLength(200)]),
+        regno: new FormControl (null, [Validators.required, Validators.maxLength(200)]),
+        college: new FormControl (null, [Validators.required, Validators.maxLength(200)]),
+        year: new FormControl (null, [Validators.required, Validators.maxLength(200)]),
+        course: new FormControl (null, [Validators.required, Validators.maxLength(200)]),
+        uemail: new FormControl (null, [Validators.required, Validators.maxLength(200)]),
+        upassword: new FormControl (null, [Validators.required, Validators.maxLength(200)])
+      })
+      
+                    $(".slider").click(function(){
+                        if($(".slider").css("left")== 0 +"px")
+                        {
+                            $(".slider").css("left","65%");
+                            $(".slider").css("width","35%");
+                            $(".register-font").html("Already a user?");
+                        }
+                        else
+                        {
+                            $(".slider").css("left","0%");
+                            $(".slider").css("width","65%");
+                            $(".register-font").html("Not registered yet?");          
+                        }
+                            });
+                                
     }
-}
+  
+    submitDocument(form):void{
+      this._documentService.AddDocument(form.value);
+      this.router.navigate(['adminpanel']);
+    }
+  
+  }
+  

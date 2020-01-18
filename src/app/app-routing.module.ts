@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LoginComponent } from './login/login.component'
-import { NotableAlumniComponent } from './notable-alumni/notable-alumni.component'
+import { LoginComponent } from './login/login.component';
+import { NotableAlumniComponent } from './notable-alumni/notable-alumni.component';
+import { AdminpanelComponent } from './adminpanel/adminpanel.component';
 const routes: Routes = [
     { path : 'login' , component : LoginComponent},
     { path : 'notable-alumni' , component : NotableAlumniComponent},   
+    { path : 'adminpanel' , component : AdminpanelComponent},   
     { path: '', redirectTo: 'login', pathMatch: 'full' }
 ];
 

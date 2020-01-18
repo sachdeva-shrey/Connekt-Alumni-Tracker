@@ -3,7 +3,7 @@
 		<div class="login-box">
 				<div class="row">
 					<div class="col-8">
-						<form>
+						<form [formGroup]="addDocumentForm" novalidate>
 						<h1 class="alumni-reg-heading">Alumni Registeration</h1>
 							<!-- Name -->
 							<div class="row">
@@ -11,27 +11,31 @@
 								<div class="col-md-6">
 									<div class="form-group">
 										<label for="firstname">First Name</label>
-										<input type="text" class="form-control" id="firstname" name="firstname">
+										<input type="text" class="form-control" id="firstname" formControlName="firstname">
 									</div>
 								</div>
-								<div class="col-md-6">
+								<div class="col-md-5 colno2">
 									<div class="form-group">
 										<label for="lastname">Last Name</label>
-										<input type="text" class="form-control" id="lastname" name="lastname">
+										<input type="text" class="form-control" id="lastname" formControlName="lastname">
 									</div>
 								</div>
 
 							</div>
 
-							<!-- College -->
+                            <!-- College -->
+                            <div class="form-group">
+                                <label for="regno">Registeration Number</label>
+                                <input type="text" class="form-control" id="regno" formControlName="regno">
+                            </div>
+
 							<div class="form-group">
 								<label for="college">College</label>
-								<select class="form-control" id="college" name="college">
-									<option>SRM</option>
-									<option>IIT BOMBAY</option>
-									<option>IIT KANPUR</option>
-									<option>SRM NCR</option>
-									<option>BITS GOA</option>
+								<select class="form-control" id="college" formControlName="college">
+									<option value="SRM">SRM</option>
+									<option value="IIT BOMBAY">IIT BOMBAY</option>
+									<option value="IIT KANPUR">IIT KANPUR</option>
+									<option value="SRM NCR">SRM NCR</option>
 								</select>
 							</div>
 
@@ -41,18 +45,16 @@
 								<div class="col-md-6">
 									<div class="form-group">
 										<label for="course">Course</label>
-										<select class="form-control" id="course" name="course">
-											<option>IIT BOMBAY</option>
-											<option>IIT KANPUR</option>
-											<option>SRM NCR</option>
-											<option>BITS GOA</option>
+										<select class="form-control" id="course" formControlName="course">
+                                            <option value="BTECH">Btech</option>
+                                            <option value="BPHARM">Bpharm</option>
 										</select>
 									</div>
 								</div>
-								<div class="col-md-6">
+								<div class="col-md-5 colno2">
 									<div class="form-group">
 										<label for="year">Year</label>
-										<select class="form-control" id="year" name="year">
+										<select class="form-control" id="year" formControlName="year">
 											<option>2000</option>
 											<option>3001</option>
 										</select>
@@ -64,35 +66,34 @@
 							<!-- Email -->
 							<div class="form-group">
 								<label for="email">Email address</label>
-								<input type="email" class="form-control" id="email" name="email">
+								<input type="email" class="form-control" id="uemail" formControlName="uemail">
 							</div>
 
 							<!-- Password -->
 							<div class="form-group">
 								<label for="password">Set password</label>
-								<input type="password" class="form-control" id="password">
+								<input type="password" class="form-control" id="upassword" formControlName="upassword">
 							</div>
-							<button type="submit" class="btn btn-primary">Submit</button>
+							<button type="button" class="btn btn-primary" (click)="submitDocument(addDocumentForm)">Submit</button>
 						</form>
-					<h6 class="text-center">Already a user? Login</h6>
 				</div>
 				<div class="col-4">
-                    <h1 class="alumni-reg-heading">Official Login</h1>
+                    <h1 class="alumni-reg-heading">Alumni Login</h1>
 					<form class="official-login">
 						<div class="form-group">
-						    <label for="official-email">Email address</label>
-						    <input type="email" class="form-control" id="official-email">
+						    <label for="alumni-email">Email address</label>
+						    <input type="email" class="form-control" id="alumni-email">
 						</div>
 						<div class="form-group">
-						    <label for="official-password">Password</label>
-						    <input type="password" class="form-control" id="official-password">
+						    <label for="alumni-password">Password</label>
+						    <input type="password" class="form-control" id="alumni-password">
 						</div>
 						<button type="submit" class="btn btn-primary">Submit</button>
 					</form>
 				</div>
 			</div>
 			<div class="slider">
-                <h1 class="register-font text-center">Are you an official?</h1>
+                <h1 class="register-font text-center">Already a user?</h1>
                 <h6 class="text-center">Click here</h6>
 			</div>
 		</div>
