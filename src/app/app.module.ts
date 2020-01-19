@@ -3,9 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-import { NotableAlumniComponent } from './notable-alumni/notable-alumni.component';
-import { AdminpanelComponent } from './adminpanel/adminpanel.component';
 
 /*Firebase */
 import { AngularFireModule } from '@angular/fire';
@@ -13,13 +10,21 @@ import { AngularFirestoreModule } from "@angular/fire/firestore";
 import { environment } from 'src/environments/environment';
 import { DocumentService } from './services/document.service';
 import { AngularFireAuth } from "@angular/fire/auth";
+
 import { HomeComponent } from './home/home.component';
-import { AlumnihomepageComponent } from './alumnihomepage/alumnihomepage.component';
-import { HeaderComponent } from './alumnihomepage/header/header.component';
+import { NotableAlumniComponent } from './notable-alumni/notable-alumni.component';
+import { AdminpanelComponent } from './adminpanel/adminpanel.component';
+// admin panel
 import { AdminnavComponent } from './adminpanel/adminnav/adminnav.component';
 import { AdmindashboardComponent } from './adminpanel/admindashboard/admindashboard.component';
 import { AdmineventsComponent } from './adminpanel/adminevents/adminevents.component';
+// login
+import { LoginComponent } from './login/login.component';
 import { VerifyemailComponent } from './login/verifyemail/verifyemail.component';
+// alumni
+import { AlumnihomepageComponent } from './alumnihomepage/alumnihomepage.component';
+import { AlumnidashboardComponent } from './alumnihomepage/alumnidashboard/alumnidashboard.component';
+import { AlumninavComponent } from './alumnihomepage/alumninav/alumninav.component';
   
 @NgModule({
   declarations: [
@@ -29,11 +34,12 @@ import { VerifyemailComponent } from './login/verifyemail/verifyemail.component'
     AdminpanelComponent,
     HomeComponent,
     AlumnihomepageComponent,
-    HeaderComponent,
     AdminnavComponent,
     AdmindashboardComponent,
     AdmineventsComponent,
     VerifyemailComponent,
+    AlumnidashboardComponent,
+    AlumninavComponent,
   ],
   imports: [
     BrowserModule,

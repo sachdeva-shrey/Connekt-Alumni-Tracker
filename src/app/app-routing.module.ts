@@ -4,11 +4,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { NotableAlumniComponent } from './notable-alumni/notable-alumni.component';
 import { HomeComponent } from './home/home.component';
 
-// Alumni Dashboard
+// Admin Dashboard
 import { AdminpanelComponent } from './adminpanel/adminpanel.component';
 import { AdmindashboardComponent } from './adminpanel/admindashboard/admindashboard.component';
 import { AdmineventsComponent } from './adminpanel/adminevents/adminevents.component';
 
+// Alumni Dashboard
+import { AlumnidashboardComponent } from './alumnihomepage/alumnidashboard/alumnidashboard.component';
 // Login Components
 import { LoginComponent } from './login/login.component';
 import { VerifyemailComponent } from './login/verifyemail/verifyemail.component';
@@ -19,7 +21,8 @@ const routes: Routes = [
     { path : 'login/verifyemail' , component : VerifyemailComponent},
 
     { path : 'notable-alumni' , component : NotableAlumniComponent},  
-
+    //alumni
+    { path : 'alumnipanel' , component :AlumnidashboardComponent},   
 
     { path : 'adminpanel' , component : AdminpanelComponent},   
     { path : 'adminpanel/dashboard' , component : AdmindashboardComponent},   

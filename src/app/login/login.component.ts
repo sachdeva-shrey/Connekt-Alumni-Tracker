@@ -55,7 +55,7 @@ export class LoginComponent implements OnInit {
  
     Signin(form):void {
         this._documentService.SignIn(form.value.alumniemail, form.value.alumnipassword);
-        this.router.navigate(['adminpanel']);
+        // this.router.navigate(['adminpanel']);
     }
 
  

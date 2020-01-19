@@ -67,8 +67,10 @@ export class DocumentService {
         if (res.user.emailVerified !== true) {
             this.SendVerificationMail();
             window.alert('Please validate your email address. Kindly check your inbox.');
-          }
-    console.log('You are Successfully logged in!');
+        }
+        else{
+            this.router.navigate(['/adminpanel']);
+        }
     })
     .catch(err => {
     console.log('Something is wrong:',err.message);
