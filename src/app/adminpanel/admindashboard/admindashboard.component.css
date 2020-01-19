@@ -148,9 +148,10 @@ nav.main-menu li.active>a,
 }
 
 h4 {
-  margin: 0px 100px 50px 100px;
+  margin: 0px 100px 30px 100px;
   padding-top: 100px;
   color: #323A47;
+  font-size: 14px;
 }
 
 h2 {
@@ -172,14 +173,14 @@ h2 {
 }
 
 #auth {
-  margin-left: 100px;
   text-align: left;
+ 
 }
 
 th {
   padding-left: 100px;
   padding-bottom: 10px;
-  text-align: center !important;
+  font-family: 'Bahnschrift';
 }
 
 td {
@@ -189,4 +190,30 @@ td {
 
 tr {
   width: 100%;
+}
+
+.btn-accept {
+  background-color: #4ED964;
+  border-radius: 20px;
+  color: #fff;
+  font-family: 'Bahnschrift' ;
+}
+
+.btn-reject {
+  background-color: #FF3A31;
+  border-radius: 20px;
+  color: #fff;
+  font-family: 'Bahnschrift' ;
+}
+
+.invite-table {
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.125);
+  margin-left: 100px;
+  margin-right: 50px;
+  padding: 30px 0px;
+}
+
+p {
+  font-family: 'Bahnschrift';
 }
