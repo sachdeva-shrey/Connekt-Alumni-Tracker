@@ -1,5 +1,14 @@
-h1 {
-  font-family: 'segoe-bold';
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url(../../../assets/fonts/bahnschrift.ttf);
+  }
+  
+  @font-face {
+    font-family: 'SF-UI';
+    src: url(../../../assets/fonts/SF-UI-Display-Regular.otf);
+  }
+  h1 {
+  font-family: 'SF-UI';
   font-size: 38px;
   margin: auto;
   text-align: center;
@@ -59,6 +68,8 @@ h5 {
   top: 13%;
   left: 43%;
   height: 200px;
+  padding-bottom: 40px;
+  padding-top: 40px;
   width: auto;
 }
 
@@ -133,3 +144,4 @@ h5 {
     height: 200px;
     width: auto;
   }
+}
