@@ -11,9 +11,7 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
     addDocumentForm:FormGroup;
     loginform : FormGroup;
-    constructor(      private _documentService : DocumentService,      private router : Router    ) { 
-
-    }
+    constructor(private _documentService : DocumentService,private router : Router) { }
   
     ngOnInit() {
       this.addDocumentForm = new FormGroup ({
@@ -24,7 +22,8 @@ export class LoginComponent implements OnInit {
         year: new FormControl (null, [Validators.required, Validators.maxLength(200)]),
         course: new FormControl (null, [Validators.required, Validators.maxLength(200)]),
         uemail: new FormControl (null, [Validators.required, Validators.maxLength(200)]),
-        upassword: new FormControl (null, [Validators.required, Validators.maxLength(200)])
+        upassword: new FormControl (null, [Validators.required, Validators.maxLength(200)]),
+        status : new FormControl (null)
       })
       this.loginform = new FormGroup({
           alumniemail : new FormControl(null),
@@ -50,15 +49,11 @@ export class LoginComponent implements OnInit {
   
     submitDocument(form):void{
         this._documentService.AddDocument(form.value);
-        // this.router.navigate(['adminpanel']);
     }
  
     Signin(form):void {
         this._documentService.SignIn(form.value.alumniemail, form.value.alumnipassword);
-        // this.router.navigate(['adminpanel']);
     }
-
- 
   
   }
   

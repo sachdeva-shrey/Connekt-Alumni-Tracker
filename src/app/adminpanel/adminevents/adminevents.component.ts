@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { DocumentService } from '../../services/document.service';
 @Component({
   selector: 'app-adminevents',
   templateUrl: './adminevents.component.html',
@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdmineventsComponent implements OnInit {
 
-  constructor() { }
-
+    documents;
+    id;
+    constructor(
+      private _documentService : DocumentService,
+    ) { }
   ngOnInit() {
+    this.getDocumentList();
   }
+
+  getDocumentList = () =>
+  this._documentService
+    .GetEventList()
+    .subscribe(res => {
+      this.documents = res;
+    });
+
 
 }
