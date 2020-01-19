@@ -19,6 +19,7 @@ import { HeaderComponent } from './alumnihomepage/header/header.component';
 import { AdminnavComponent } from './adminpanel/adminnav/adminnav.component';
 import { AdmindashboardComponent } from './adminpanel/admindashboard/admindashboard.component';
 import { AdmineventsComponent } from './adminpanel/adminevents/adminevents.component';
+import { VerifyemailComponent } from './login/verifyemail/verifyemail.component';
   
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { AdmineventsComponent } from './adminpanel/adminevents/adminevents.compo
     AdminnavComponent,
     AdmindashboardComponent,
     AdmineventsComponent,
+    VerifyemailComponent,
   ],
   imports: [
     BrowserModule,

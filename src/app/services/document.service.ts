@@ -18,7 +18,7 @@ export class DocumentService {
     SendVerificationMail() {
         return this.angularFireAuth.auth.currentUser.sendEmailVerification()
         .then(() => {
-          this.router.navigate(['adminpanel']);
+          this.router.navigate(['login/verifyemail']);
         })
       }
 /* Add Document */
@@ -26,10 +26,9 @@ export class DocumentService {
         this.angularFireAuth.auth.createUserWithEmailAndPassword(document.uemail, document.upassword)
         .then(res => {
             this.SendVerificationMail();
-            console.log('You are Successfully signed up!', res);
         })
             .catch(error => {
-            console.log('Something is wrong:', error.message);
+                alert('Oops! Something is wrong: \n'+ error.message);
         });
 
 
