@@ -17,8 +17,8 @@ import { VerifyemailComponent } from './login/verifyemail/verifyemail.component'
 
 const routes: Routes = [
     // Login 
-    { path : 'login' , component : LoginComponent},
-    { path : 'login/verifyemail' , component : VerifyemailComponent},
+    { path : 'alumnilogin' , component : LoginComponent},
+    { path : 'alumnilogin/verifyemail' , component : VerifyemailComponent},
 
     { path : 'notable-alumni' , component : NotableAlumniComponent},  
     //alumni
