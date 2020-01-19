@@ -39,6 +39,6 @@
         <td>{{ document.payload.doc.data().regno}}</td>
         <td></td>
         <td><button class="btn btn-success">Accept</button></td>
-        <td><button class="btn btn-danger">Reject</button></td>
+        <td><button (click)="reject(document.id)" class="btn btn-danger">Reject</button></td>
     </tr>
 </table>

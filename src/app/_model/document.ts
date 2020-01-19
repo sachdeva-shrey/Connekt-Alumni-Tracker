@@ -1,5 +1,5 @@
 export interface Document {
-    $key: string;
+    $key: string,
     firstname : string,
     lastname : string,
     regno : string,
@@ -8,4 +8,13 @@ export interface Document {
     college : string,
     uemail : string,
     upassword : string,
+}
+
+export interface eventtype{
+    $key :string,
+    title: string,
+    details : string,
+    date : string,
+    time :string,
+    venue :string;
 }

@@ -25,6 +25,7 @@ import { VerifyemailComponent } from './login/verifyemail/verifyemail.component'
 import { AlumnihomepageComponent } from './alumnihomepage/alumnihomepage.component';
 import { AlumnidashboardComponent } from './alumnihomepage/alumnidashboard/alumnidashboard.component';
 import { AlumninavComponent } from './alumnihomepage/alumninav/alumninav.component';
+import { AdminneweventComponent } from './adminpanel/adminevents/adminnewevent/adminnewevent.component';
   
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { AlumninavComponent } from './alumnihomepage/alumninav/alumninav.compone
     VerifyemailComponent,
     AlumnidashboardComponent,
     AlumninavComponent,
+    AdminneweventComponent,
   ],
   imports: [
     BrowserModule,

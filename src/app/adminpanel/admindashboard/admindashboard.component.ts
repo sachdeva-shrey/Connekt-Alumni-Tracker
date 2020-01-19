@@ -14,10 +14,10 @@ export class AdmindashboardComponent implements OnInit {
     ) { }
   
     ngOnInit() {
-      this.getDocumentList();
+      this.getEvents();
     }
   
-    getDocumentList = () =>
+    getEvents = () =>
     this._documentService
       .GetDocumentList()
       .subscribe(res => {

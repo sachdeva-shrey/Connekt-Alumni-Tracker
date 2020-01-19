@@ -1,36 +1,35 @@
 <body>
     <app-adminnav></app-adminnav>
-  <div class="nav-head">
-    <h3>Alumni Association</h3>
-  </div>
-  <div class="container"></div>
+    <div class="nav-head">
+        <h3>Alumni Association</h3>
+    </div>
+    <div class="container"></div>
 
-  <h4>Events</h4>
-  <button class="add-event btn btn-success" type="button">Add Event</button>
-  <button class="delete-event btn btn-danger" type="button"> Delete Event</button>
-  <div class="event-cards">
-    <div>
-      <h2>MOZOFEST'20</h2>
-      <img src="" alt="event-image">
+    <h4>Events</h4>
+    <button class="add-event btn btn-success" type="button" routerLink="/adminpanel/events/create/">Add Event</button>
+    <button class="delete-event btn btn-danger" type="button"> Delete Event</button>
+    <div class="event-cards" *ngFor="let document of documents">
+        <div>
+            <h2>{{ document.payload.doc.data().title }}</h2>
+            <img src="../../../assets/img/eventimage.jpg" alt="event-image" style="margin-top: 50px; width: 150px; margin-right: 50px;">
+        </div>
+        <div>
+            <p class="eventdetailshead">Event Details</p>
+            <p style="color: #000">{{ document.payload.doc.data().details }}</p>
+            <div class="event-details">
+                <div>
+                    <p class="eventdetailshead1">Date</p>
+                    <p>{{ document.payload.doc.data().date }}</p>
+                </div>
+                <div>
+                    <p class="eventdetailshead1">Venue</p>
+                    <p>{{ document.payload.doc.data().venue }}</p>
+                </div>
+                <div>
+                    <p class="eventdetailshead1">Time</p>
+                    <p>{{ document.payload.doc.data().time}}</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div>
-      <p>Event Details</p>
-      <p style="color: #000">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Eligendi ipsum consequuntur
-        voluptatibus molestiae quam, exercitationem dignissimos nostrum blanditiis esse ratione?</p>
-      <div class="event-details">
-        <div>
-          <p>Date</p>
-          <p>20th-22nd March</p>
-        </div>
-        <div>
-          <p>Venue</p>
-          <p>SRM IST</p>
-        </div>
-        <div>
-          <p>Time</p>
-          <p>12:30 pm</p>
-        </div>
-      </div>
-    </div>
-  </div>
 </body>
