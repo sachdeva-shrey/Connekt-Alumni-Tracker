@@ -49,3 +49,24 @@ p {
 .profile {
   margin-bottom: 30px;
 }
+
+h6 {
+    font-size: 12px;
+    color: rgb(26, 26, 26);
+}
+
+h4 {
+    font-size: 14px
+}
+
+.notice {
+    margin-top: 20px;
+}
+
+.profile {
+    height: 100px;
+    width: auto;
+    border-radius: 60px;
+    display: block;
+    margin: auto;
+}
