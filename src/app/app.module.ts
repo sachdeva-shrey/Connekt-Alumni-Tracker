@@ -13,6 +13,9 @@ import { AngularFirestoreModule } from "@angular/fire/firestore";
 import { environment } from 'src/environments/environment';
 import { DocumentService } from './services/document.service';
 import { AngularFireAuth } from "@angular/fire/auth";
+import { HomeComponent } from './home/home.component';
+import { AlumnihomepageComponent } from './alumnihomepage/alumnihomepage.component';
+import { HeaderComponent } from './alumnihomepage/header/header.component';
   
 @NgModule({
   declarations: [
@@ -20,6 +23,9 @@ import { AngularFireAuth } from "@angular/fire/auth";
     LoginComponent,
     NotableAlumniComponent,
     AdminpanelComponent,
+    HomeComponent,
+    AlumnihomepageComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
