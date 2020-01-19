@@ -16,6 +16,9 @@ import { AngularFireAuth } from "@angular/fire/auth";
 import { HomeComponent } from './home/home.component';
 import { AlumnihomepageComponent } from './alumnihomepage/alumnihomepage.component';
 import { HeaderComponent } from './alumnihomepage/header/header.component';
+import { AdminnavComponent } from './adminpanel/adminnav/adminnav.component';
+import { AdmindashboardComponent } from './adminpanel/admindashboard/admindashboard.component';
+import { AdmineventsComponent } from './adminpanel/adminevents/adminevents.component';
   
 @NgModule({
   declarations: [
@@ -26,6 +29,9 @@ import { HeaderComponent } from './alumnihomepage/header/header.component';
     HomeComponent,
     AlumnihomepageComponent,
     HeaderComponent,
+    AdminnavComponent,
+    AdmindashboardComponent,
+    AdmineventsComponent,
   ],
   imports: [
     BrowserModule,

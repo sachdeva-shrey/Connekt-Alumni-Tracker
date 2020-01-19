@@ -1,0 +1,44 @@
+<app-adminnav></app-adminnav>
+
+<h4>Dashboard</h4>
+<div class="stat-cards">
+    <div class="card text-center">
+        <p>Alumni Registered</p>
+        <h2>4,567</h2>
+    </div>
+    <div class="card text-center">
+        <p>Colleges Registered</p>
+        <h2>4,567</h2>
+    </div>
+    <div class="card text-center">
+        <p>Upcoming Events</p>
+        <h2>4,567</h2>
+    </div>
+    <div class="card text-center">
+        <p>Upcoming Events</p>
+        <h2>4,567</h2>
+    </div>
+</div>
+
+<h4 style="margin-top: 50px;">Analytics</h4>
+<table id="auth">
+    <tr>
+        <th>Name</th>
+        <th>College</th>
+        <th>Batch</th>
+        <th>Reg. No.</th>
+        <th></th>
+        <th>Accept</th>
+        <th>Reject</th>
+
+    </tr>
+    <tr *ngFor="let document of documents">
+        <td>{{ document.payload.doc.data().firstname }}</td>
+        <td>{{ document.payload.doc.data().college }}</td>
+        <td>{{ document.payload.doc.data().year }}</td>
+        <td>{{ document.payload.doc.data().regno}}</td>
+        <td></td>
+        <td><button class="btn btn-success">Accept</button></td>
+        <td><button class="btn btn-danger">Reject</button></td>
+    </tr>
+</table>

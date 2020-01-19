@@ -6,22 +6,9 @@ import { DocumentService } from './../services/document.service';
   styleUrls: ['./adminpanel.component.css']
 })
 export class AdminpanelComponent implements OnInit {
-    documents;
-    id;
-    constructor(
-      private _documentService : DocumentService,
-    ) { }
+    constructor() { }
   
     ngOnInit() {
-      this.getDocumentList();
+
     }
-  
-    getDocumentList = () =>
-    this._documentService
-      .GetDocumentList()
-      .subscribe(res => {
-        this.documents = res;
-      });
-  
-      deleteDocument = data => this._documentService.DeleteDocument(data);
   }
