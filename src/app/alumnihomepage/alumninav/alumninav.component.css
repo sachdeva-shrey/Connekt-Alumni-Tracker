@@ -1,0 +1,50 @@
+.fa {
+    color: #C7D1D8;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.fa:hover {
+    color: #fff;
+}
+
+nav {
+    background-color: #323A47;
+    /* background-color: #727CF5; */
+    height: 55px;
+}
+.nav>div:nth-child(2) {
+    display: flex;
+    margin-left: 50%
+}
+
+.nav>div>div:nth-child(n) {
+    margin-right: 35px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.nav>div>div:nth-child(n):hover{
+    color: #fff;
+}
+
+
+p {
+    color: #C7D1D8;
+    font-size: 12px;
+}
+
+p:hover{
+    color: #fff;
+}
+
+a {
+    text-align: left;
+}
+
+.dropdown {
+    padding-top: 8px;
+    margin-left: 20px
+}
