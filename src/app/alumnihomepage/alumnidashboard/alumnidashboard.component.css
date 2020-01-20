@@ -51,22 +51,55 @@ p {
 }
 
 h6 {
-    font-size: 12px;
-    color: rgb(26, 26, 26);
+  font-size: 12px;
+  color: rgb(26, 26, 26);
 }
 
 h4 {
-    font-size: 14px
+  font-size: 14px
 }
 
 .notice {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .profile {
-    height: 100px;
-    width: auto;
-    border-radius: 60px;
-    display: block;
-    margin: auto;
+  height: 100px;
+  width: auto;
+  border-radius: 60px;
+  display: block;
+  margin: auto;
+}
+
+.face-1 {
+  height: 70px;
+  width: auto;
+  border-radius: 50px;
+}
+
+.feed {
+  display: flex;
+  margin-top: 30px;
+}
+
+.feed>div:nth-child(2) {
+  margin-left: 20px
+}
+
+.option-icons {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.post {
+  border: none;
+  border-bottom: 1px solid #b4b4b4;
+  width: 450px;
+  outline: none;
+}
+
+.btn-success {
+  background-color: #727CF5;
+  outline: none;
+  margin-left: 30px;
 }
