@@ -14,7 +14,7 @@ body {
 .aside {
   grid-area: a;
   margin-right: 50px;
-  height: 500px !important;
+  height: 00px !important;
 }
 
 .grid {
@@ -37,7 +37,7 @@ body {
   padding: 1rem;
   border: 1px solid #b4b4b4;
   font-size: 1rem;
-  height: 800px;
+  height: 1200px;
 }
 .content {
     grid-area: c;
@@ -107,14 +107,21 @@ h4 {
 }
 
 .btn-success {
-  background-color: #727CF5;
+  background-color: #727CF5 !important;
   outline: none;
   /* margin-bottom: 30px; */
   /* position: relative !important;
   top: -25px !important;
   right: -20px !important; */
   width: 100%;
+  border: none;
 }
+.btn-success:hover,.btn-success:active ,.btn-success:visited,.btn-success:future {
+    background-color: rgb(95, 104, 201) !important;
+    outline: none;
+    width: 100%;
+    border: none;
+  }
 span :hover{
     color: blue !important;
     cursor: pointer;

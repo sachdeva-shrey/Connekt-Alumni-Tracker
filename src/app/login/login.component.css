@@ -106,7 +106,9 @@ button[type="submit"] {
   font-family: 'SF-UI';
   letter-spacing: 1px;
 }
-
+button:hover,button:active, button:focus{
+background-color: rgb(88, 97, 196) !important;
+}
 .colno2 .form-group{
     margin-right: -20px;
 }
