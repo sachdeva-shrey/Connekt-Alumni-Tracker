@@ -9,6 +9,7 @@ export class AdmineventsComponent implements OnInit {
 
     documents;
     id;
+    data;
     constructor(
       private _documentService : DocumentService,
     ) { }
@@ -22,5 +23,10 @@ export class AdmineventsComponent implements OnInit {
     .subscribe(res => {
       this.documents = res;
     });
-    deleteevent = data => this._documentService.DeleteEvent(data);
+
+
+    deleteevent(data){
+        this._documentService.DeleteEvent(data);
+    }
+
 }

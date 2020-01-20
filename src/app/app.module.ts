@@ -28,6 +28,7 @@ import { AlumninavComponent } from './alumnihomepage/alumninav/alumninav.compone
 import { AdminneweventComponent } from './adminpanel/adminevents/adminnewevent/adminnewevent.component';
 import { CommonnavbarComponent } from './home/commonnavbar/commonnavbar.component';
 import { CommonfooterComponent } from './home/commonfooter/commonfooter.component';
+import { AdminauthComponent } from './adminpanel/adminauth/adminauth.component';
   
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { CommonfooterComponent } from './home/commonfooter/commonfooter.componen
     AdminneweventComponent,
     CommonnavbarComponent,
     CommonfooterComponent,
+    AdminauthComponent,
   ],
   imports: [
     BrowserModule,

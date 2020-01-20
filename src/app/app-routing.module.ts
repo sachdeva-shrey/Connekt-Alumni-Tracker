@@ -9,6 +9,9 @@ import { AdminpanelComponent } from './adminpanel/adminpanel.component';
 import { AdmindashboardComponent } from './adminpanel/admindashboard/admindashboard.component';
 import { AdmineventsComponent } from './adminpanel/adminevents/adminevents.component';
 import { AdminneweventComponent } from './adminpanel/adminevents/adminnewevent/adminnewevent.component';
+import { AdminauthComponent } from './adminpanel/adminauth/adminauth.component';
+
+
 // Alumni Dashboard
 import { AlumnidashboardComponent } from './alumnihomepage/alumnidashboard/alumnidashboard.component';
 // Login Components
@@ -28,6 +31,7 @@ const routes: Routes = [
     { path : 'adminpanel/dashboard' , component : AdmindashboardComponent},   
     { path : 'adminpanel/events' , component : AdmineventsComponent},  
     { path : 'adminpanel/events/create' , component : AdminneweventComponent},  
+    { path : 'adminpanel/auth' , component : AdminauthComponent},  
 
     { path : 'home' , component : HomeComponent}, 
     { path: '', redirectTo: 'home', pathMatch: 'full' }

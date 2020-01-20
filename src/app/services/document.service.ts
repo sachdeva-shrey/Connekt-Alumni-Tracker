@@ -22,7 +22,7 @@ export class DocumentService {
     return this.angularFireAuth.auth.currentUser
       .sendEmailVerification()
       .then(() => {
-        this.router.navigate(["login/verifyemail"]);
+        this.router.navigate(["alumnilogin/verifyemail"]);
       });
   }
   /* Add Document */
@@ -126,8 +126,8 @@ export class DocumentService {
   DeleteEvent(data) {
     return this.firestore
       .collection("eventsdb")
-      .doc(data.payload.doc.data().details)
-      .delete();
+      .doc(data.payload.doc.id)
+      .delete()
   }
 
 
