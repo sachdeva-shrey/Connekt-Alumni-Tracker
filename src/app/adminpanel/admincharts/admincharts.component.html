@@ -1,1 +1,18 @@
-<p>admincharts works!</p>
+<div class="flex">
+    <div class="flex-item">
+      <div style="display: block;">
+      <canvas class="chartjs" baseChart width="400" height="400"
+                  [datasets]="lineChartData"
+                  [labels]="lineChartLabels"
+                  [options]="lineChartOptions"
+                  [colors]="lineChartColors"
+                  [legend]="lineChartLegend"
+                  [chartType]="lineChartType"
+                  [plugins]="lineChartPlugins"
+                  (chartHover)="chartHovered($event)"
+                  (chartClick)="chartClicked($event)"></canvas>
+      </div>
+    </div>
+    <div class="flex-item">
+     <h3>Regestrations</h3>
+  </div>
