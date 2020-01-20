@@ -23,11 +23,15 @@ import { AdminloginComponent} from './adminpanel/adminlogin/adminlogin.component
 // STudent
 import { StudentComponent } from './student/student.component';
 import { StudentprofileComponent } from './student/studentprofile/studentprofile.component';
+import { StudentloginComponent } from './student/studentlogin/studentlogin.component';
 const routes: Routes = [
     // Login 
     { path : 'alumnilogin' , component : LoginComponent},
     { path : 'alumnilogin/verifyemail' , component : VerifyemailComponent},
     { path : 'adminlogin' , component : AdminloginComponent},
+    { path : 'studentlogin' , component : StudentloginComponent},
+
+
     { path : 'notable-alumni' , component : NotableAlumniComponent},  
     //alumni
     { path : 'alumnipanel' , component :AlumnidashboardComponent},   

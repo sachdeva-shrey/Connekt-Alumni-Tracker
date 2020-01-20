@@ -36,6 +36,7 @@ import { StudentnavComponent } from './student/studentnav/studentnav.component';
 import { AlumniprofileComponent } from './alumnihomepage/alumniprofile/alumniprofile.component';
 import { StudentprofileComponent } from './student/studentprofile/studentprofile.component';
 import { AdminloginComponent } from './adminpanel/adminlogin/adminlogin.component';
+import { StudentloginComponent } from './student/studentlogin/studentlogin.component';
 import { AdminchartsComponent } from './adminpanel/admincharts/admincharts.component';
   
 @NgModule({
@@ -63,6 +64,7 @@ import { AdminchartsComponent } from './adminpanel/admincharts/admincharts.compo
     AlumniprofileComponent,
     StudentprofileComponent,
     AdminloginComponent,
+    StudentloginComponent,
     AdminchartsComponent,
   ],
   imports: [
