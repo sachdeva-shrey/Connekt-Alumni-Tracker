@@ -30,3 +30,7 @@
     z-index: 999;
     background-color: white;
 }
+
+.section-title-sub h3 {
+    color: rgb(95, 104, 201);
+}
