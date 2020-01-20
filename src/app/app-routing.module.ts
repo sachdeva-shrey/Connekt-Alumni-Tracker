@@ -14,6 +14,7 @@ import { AdminauthComponent } from './adminpanel/adminauth/adminauth.component';
 
 // Alumni Dashboard
 import { AlumnidashboardComponent } from './alumnihomepage/alumnidashboard/alumnidashboard.component';
+import { AlumnieventsComponent } from './alumnihomepage/alumnievents/alumnievents.component';
 // Login Components
 import { LoginComponent } from './login/login.component';
 import { VerifyemailComponent } from './login/verifyemail/verifyemail.component';
@@ -26,6 +27,7 @@ const routes: Routes = [
     { path : 'notable-alumni' , component : NotableAlumniComponent},  
     //alumni
     { path : 'alumnipanel' , component :AlumnidashboardComponent},   
+    { path : 'alumnipanel/events' , component :AlumnieventsComponent}, 
     //admin
     { path : 'adminpanel' , component : AdminpanelComponent},   
     { path : 'adminpanel/dashboard' , component : AdmindashboardComponent},   
