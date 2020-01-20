@@ -1,13 +1,14 @@
 @font-face {
-    font-family: 'Bahnschrift';
-    src: url(../../../assets/fonts/bahnschrift.ttf);
-  }
-  
-  @font-face {
-    font-family: 'SF-UI';
-    src: url(../../../assets/fonts/SF-UI-Display-Regular.otf);
-  }
-  h1 {
+  font-family: 'Bahnschrift';
+  src: url(../../../assets/fonts/bahnschrift.ttf);
+}
+
+@font-face {
+  font-family: 'SF-UI';
+  src: url(../../../assets/fonts/SF-UI-Display-Regular.otf);
+}
+
+h1 {
   font-family: 'SF-UI';
   font-size: 38px;
   margin: auto;
@@ -31,30 +32,31 @@ h2 {
 
 .shortcut {
   display: inline-block;
-  border: 0.6px solid var(--grey-color);
   border-radius: 15px;
   display: flex;
   flex-direction: row;
+  height: 50px;
   width: 200px;
   padding: 8px 20px;
   margin-left: 20px;
   cursor: pointer;
+  border: 0.6px solid #ccc;
 }
 
 .shortcut h4 {
   font-size: 14px;
   padding-left: 20px;
+  margin-top: 10px;
 
 }
 
 .shortcut-account {
   display: flex;
   margin-top: 50px;
-  margin-left: 35%;
   text-align: center;
 }
 
-.resendemail{
+.resendemail {
   display: block;
   color: var(--primary-color);
   margin: auto;
@@ -65,12 +67,16 @@ h2 {
 
 .illustration {
   position: absolute;
-  top: 13%;
-  left: 43%;
-  height: 200px;
-  padding-bottom: 40px;
-  padding-top: 40px;
+  top: 15%;
+  left: 650px;
+  height: 170px;
   width: auto;
+}
+
+.verification {
+  position: absolute;
+  top: 30%;
+  left: 35%;
 }
 
 .profile-illustration {
@@ -111,7 +117,6 @@ h2 {
   .shortcut-account {
     display: block;
     margin-top: 50px;
-    margin-left: 5%;
     text-align: center;
   }
 
