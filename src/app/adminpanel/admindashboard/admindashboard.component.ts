@@ -24,5 +24,5 @@ export class AdmindashboardComponent implements OnInit {
         this.documents = res;
       });
   
-      deleteDocument = data => this._documentService.DeleteDocument(data);
+      reject = data => this._documentService.DeleteDocument(data);
   }

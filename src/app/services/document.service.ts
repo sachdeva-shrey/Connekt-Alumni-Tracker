@@ -22,7 +22,7 @@ export class DocumentService {
     return this.angularFireAuth.auth.currentUser
       .sendEmailVerification()
       .then(() => {
-        this.router.navigate(["login/verifyemail"]);
+        this.router.navigate(["alumnilogin/verifyemail"]);
       });
   }
   /* Add Document */
