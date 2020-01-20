@@ -8,6 +8,10 @@
   src: url(../../../assets/fonts/SF-UI-Display-Regular.otf);
 }
 
+body {
+  overflow-y: 0;
+}
+
 h1 {
   font-family: 'SF-UI';
   font-size: 38px;
@@ -151,9 +155,9 @@ h2 {
   }
 }
 
-
 .logo {
   height: 40px;
   width: auto;
   margin: 15px;
 }
+

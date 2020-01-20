@@ -1,0 +1,79 @@
+.sidebar {
+  grid-area: s;
+  margin-left: 50px;
+  height: 300px !important;
+}
+
+.content {
+  grid-area: c;
+}
+
+.aside {
+  grid-area: a;
+  margin-right: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 80px minmax(400px, auto) 50px;
+  grid-gap: 1em;
+  grid-template-areas:
+    "s c";
+}
+
+.grid-item {
+  display: grid;
+}
+
+.grid-item {
+  display: block;
+  margin-top: 50px;
+  background-color: #fff;
+  padding: 1rem;
+  font-size: 1rem;
+  height: 500px;
+}
+
+p {
+  font-size: 12px;
+}
+
+h4 {
+  font-size: 14px
+}
+
+.profile {
+  height: 150px;
+  width: auto;
+  display: block;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.location {
+  height: 15px;
+  width: auto;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+h5 {
+    margin: 0px !important;
+}
+
+.chat {
+    height: 20px;
+    width: auto;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.message {
+    background-color: #727CF5;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    outline: none;
+    margin-right: 10px;
+}
