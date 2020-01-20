@@ -194,3 +194,8 @@ h3 {
   font-size: 18px;
   margin: 7px;
 }
+
+.chart {
+  height: 40px;
+  width: auto;
+}

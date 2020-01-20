@@ -29,6 +29,11 @@ label {
   padding-top: 20px;
 }
 
+
+.container {
+  height: 500px !important;
+}
+
 .login-box {
   background-color: #fff;
   padding: 40px;
@@ -104,4 +109,9 @@ button[type="submit"] {
 
 .colno2 .form-group{
     margin-right: -20px;
+}
+
+.submit-btn {
+  background-color: #727CF5;
+  border: none;
 }
