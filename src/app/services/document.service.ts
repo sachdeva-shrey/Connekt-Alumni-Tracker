@@ -126,8 +126,8 @@ export class DocumentService {
   DeleteEvent(data) {
     return this.firestore
       .collection("eventsdb")
-      .doc(data.payload.doc.data().details)
-      .delete();
+      .doc(data.payload.doc.id)
+      .delete()
   }
 
 

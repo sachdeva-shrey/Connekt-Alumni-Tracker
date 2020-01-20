@@ -28,10 +28,8 @@
                     <p class="eventdetailshead1">Time</p>
                     <p>{{ document.payload.doc.data().time}}</p>
                 </div>
-                <div>
-                    <button class="delete-event btn btn-danger" type="button" (onclick)="deleteevent(document)"> Delete Event</button>
-                </div>
             </div>
+                <button class="delete-event btn btn-danger" (click)="deleteevent(document)"> Delete Event</button>
         </div>
     </div>
 </body>
