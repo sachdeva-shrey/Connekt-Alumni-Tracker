@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chat App</title>
+  <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <style>
+    body {
+      padding: 22px;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    #message-container {
+      margin-top: 100px;
+      margin-left:700px;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    #message-container div {
+      background-color: #CCC;
+      padding: 5px;
+    }
+
+    #message-container div:nth-child(2n) {
+      background-color: #FFF;
+    }
+
+    #send-container {
+      position: fixed;
+      margin-left: 487px;
+      padding-right: 20px;
+      padding-bottom: 30px;
+      bottom: 0;
+      background-color: white;
+      /* width: 120px; */
+      width: auto;
+      display: flex;
+    }
+
+   .btn{
+     height : 38px;
+     padding: 5px;
+     margin-left: 5px;
+     
+   }
+
+    #message-input {
+      flex-grow: 1;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <div class="nav-head">
+    <h3>Alumni Association</h3>
+</div>
+<div class="container"></div>
+<nav class="main-menu">
+  <ul>
+    <li>
+      <a routerLink ="/adminpanel/dashboard">
+        <i class="fa fa-home fa-2x"></i>
+        <span class="nav-text">
+          Dashboard
+        </span>
+      </a>
+    </li>
+
+    <li class="has-subnav">
+      <a href="#">
+        <i class="fa fa-chart-bar fa-2x"></i>
+        <span class="nav-text">
+          Chart
+        </span>
+      </a>
+    </li>
+
+    <li class="has-subnav">
+      <a routerLink ="/adminpanel/events">
+        <i class="fa fa-calendar fa-2x"></i>
+        <span class="nav-text">
+          Events
+        </span>
+      </a>
+    </li>
+
+    <li class="has-subnav">
+      <a href="#">
+        <i class="fa fa-envelope fa-2x"></i>
+        <span class="nav-text">
+          Mailbox
+        </span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="#">
+        <i class="fa fa-user-check fa-2x"></i>
+        <span class="nav-text">
+          Authentication
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="fa fa-newspaper fa-2x"></i>
+        <span class="nav-text">
+          Newsletter
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="fa fa-bell fa-2x"></i>
+        <span class="nav-text">
+          Notifications
+        </span>
+      </a>
+    </li>
+  </ul>
+
+  <ul class="logout">
+    <li>
+      <a href="#">
+        <i class="fa fa-power-off fa-2x"></i>
+        <span class="nav-text">
+          Logout
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+  <!-- <div id="message-container"></div>
+  <form id="send-container">
+    <input type="text" id="message-input">
+    <button type="submit" id="send-button"><i class="fas fa-paper-plane"></i></button>
+  </form> -->
+
+  <div id="message-container"></div>
+
+  <form id="send-container">
+    <div class="form-group">
+      
+      <input type="text" class="form-control" id="message-input" aria-describedby="emailHelp" placeholder="Message">
+      
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+    
+</body>
+</html>
