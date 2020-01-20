@@ -36,14 +36,17 @@ export class DocumentService {
       .then(res => {
         this.SendVerificationMail();
         return new Promise<any>((resolve, reject) => {
-          this.firestore
-            .collection("documents")
-            .add(document)
-            .then(
-              res => {
+            this.firestore.collection("documents").add(document)
+                .then(res => {
+                    resolve(res);
+                },
+                err => reject(err)
+                );
+            this.firestore.collection("acceptedusersdb").add(document)
+            .then(res => {
                 resolve(res);
-              },
-              err => reject(err)
+                },
+                err => reject(err)
             );
         });
       })
@@ -97,17 +100,6 @@ export class DocumentService {
         alert(err.message);
       });
   }
-  Moveuser(document : Document){
-    return new Promise<any>((resolve, reject) => {
-      this.firestore.collection("acceptedusersdb").add(document)
-        .then(res => {
-          resolve(res);
-        }, err => reject(err));
-    });
-  }
-
-
-
 
 /****************************
 ---------Events
