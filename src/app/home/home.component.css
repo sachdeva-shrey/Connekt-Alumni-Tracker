@@ -1,0 +1,15 @@
+.card img {
+    width: 95%;
+    height: 35vh;
+    padding-left: 5%;
+    padding-top: 3.5%;
+}
+
+.card-title {
+    text-align: center;
+    padding-top: 10%;
+}
+
+.card:hover {
+
+}
