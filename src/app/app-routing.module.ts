@@ -15,10 +15,14 @@ import { AllalumniComponent } from './adminpanel/allalumni/allalumni.component';
 // Alumni Dashboard
 import { AlumnidashboardComponent } from './alumnihomepage/alumnidashboard/alumnidashboard.component';
 import { AlumnieventsComponent } from './alumnihomepage/alumnievents/alumnievents.component';
+import { AlumniprofileComponent } from './alumnihomepage/alumniprofile/alumniprofile.component';
 // Login Components
 import { LoginComponent } from './login/login.component';
 import { VerifyemailComponent } from './login/verifyemail/verifyemail.component';
 
+// STudent
+import { StudentComponent } from './student/student.component';
+import { StudentprofileComponent } from './student/studentprofile/studentprofile.component';
 const routes: Routes = [
     // Login 
     { path : 'alumnilogin' , component : LoginComponent},
@@ -28,6 +32,7 @@ const routes: Routes = [
     //alumni
     { path : 'alumnipanel' , component :AlumnidashboardComponent},   
     { path : 'alumnipanel/events' , component :AlumnieventsComponent}, 
+    { path : 'alumnipanel/profile' , component :AlumniprofileComponent}, 
     //admin
     { path : 'adminpanel' , component : AdminpanelComponent},   
     { path : 'adminpanel/dashboard' , component : AdmindashboardComponent},   
@@ -36,6 +41,14 @@ const routes: Routes = [
     { path : 'adminpanel/auth' , component : AdminauthComponent},  
     { path : 'adminpanel/alumnidata' , component : AllalumniComponent},  
     { path : 'home' , component : HomeComponent}, 
+
+    //student
+    { path :'student' ,component : StudentComponent},
+    { path :'student/profile' ,component : StudentprofileComponent} ,
+
+
+
+
     { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 

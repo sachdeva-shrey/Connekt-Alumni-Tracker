@@ -2,7 +2,7 @@
 
 <h4>Events</h4>
 <!-- <button class="add-event btn btn-success" type="button" routerLink="/adminpanel/events/create/">Add Event</button> -->
-<!-- <div class="event-cards" *ngFor="let document of documents">
+<div class="event-cards" *ngFor="let document of documents">
     <div>
         <h2>{{ document.payload.doc.data().title }}</h2>
         <img src="../../../assets/img/eventimage.jpg" alt="event-image" style="margin-top: 50px; width: 150px; margin-right: 50px;">
@@ -23,7 +23,10 @@
                 <p class="eventdetailshead1">Time</p>
                 <p>{{ document.payload.doc.data().time}}</p>
             </div>
+            <div>
+                <p class="eventdetailshead1">More</p>
+                <p><a href="https://events.srmkzilla.net">Click here</a></p>
+            </div>
         </div>
-            <button class="delete-event btn btn-danger" (click)="deleteevent(document)"> Delete Event</button>
     </div>
-</div> -->
+</div>

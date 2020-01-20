@@ -44,15 +44,17 @@ p {
   font-size: 12px;
   margin: 0;
   margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .profile {
   margin-bottom: 30px;
 }
 
-h6 {
-  font-size: 12px;
+.likesharecmnt{
+  font-size: 12px !important;
   color: rgb(26, 26, 26);
+  font-weight: 500;
 }
 
 h4 {
@@ -80,6 +82,8 @@ h4 {
 .feed {
   display: flex;
   margin-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: 0.3px solid #cccccc;
 }
 
 .feed>div:nth-child(2) {
@@ -101,5 +105,13 @@ h4 {
 .btn-success {
   background-color: #727CF5;
   outline: none;
-  margin-left: 30px;
+  margin-bottom: 30px;
+}
+span :hover{
+    color: blue !important;
+    cursor: pointer;
+}
+
+textarea{
+    width: 100% !important; 
 }

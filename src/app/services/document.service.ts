@@ -139,5 +139,16 @@ export class DocumentService {
       .delete();
   }
 
+/*************************************
+    Alumni Dashboard Events
+*************************************/
+GetPostList() {
+    return this.firestore.collection("alumniposts").snapshotChanges();
+  }
+
+
+
+
+  
   //closing tag
 }

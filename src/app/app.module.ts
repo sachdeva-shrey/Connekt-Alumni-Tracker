@@ -33,6 +33,8 @@ import { AlumnieventsComponent } from './alumnihomepage/alumnievents/alumnievent
 import { AllalumniComponent } from './adminpanel/allalumni/allalumni.component';
 import { StudentComponent } from './student/student.component';
 import { StudentnavComponent } from './student/studentnav/studentnav.component';
+import { AlumniprofileComponent } from './alumnihomepage/alumniprofile/alumniprofile.component';
+import { StudentprofileComponent } from './student/studentprofile/studentprofile.component';
   
 @NgModule({
   declarations: [
@@ -56,6 +58,8 @@ import { StudentnavComponent } from './student/studentnav/studentnav.component';
     AllalumniComponent,
     StudentComponent,
     StudentnavComponent,
+    AlumniprofileComponent,
+    StudentprofileComponent,
   ],
   imports: [
     BrowserModule,

@@ -24,9 +24,4 @@ export class AdmineventsComponent implements OnInit {
       this.documents = res;
     });
 
-
-    deleteevent(data){
-        this._documentService.DeleteEvent(data);
-    }
-
 }
