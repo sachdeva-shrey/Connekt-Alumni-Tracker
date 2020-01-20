@@ -15,21 +15,23 @@
             <hr>
             <div>
                 <form [formGroup]="newpostform">
-                    <textarea class="post" rows="2" placeholder="Describe the opportunity?" formControlName="details"></textarea>
-                    <textarea class="post" rows="2" placeholder="What are the skills required?" formControlName="skilldetails"></textarea>
-                    <textarea class="post" rows="2" placeholder="Where is it located?" formControlName="locationdetails"></textarea>
-                    <button class="btn btn-success" 
-                    (click)="createnewpost(newpostform)">Publish</button>
+                    <textarea class="post" rows="2" placeholder="Describe the opportunity?"
+                        formControlName="details"></textarea>
+                    <textarea class="post" rows="2" placeholder="What are the skills required?"
+                        formControlName="skilldetails"></textarea>
+                    <textarea class="post" rows="2" placeholder="Where is it located?"
+                        formControlName="locationdetails"></textarea>
+                    <button class="btn btn-success" (click)="createnewpost(newpostform)">Publish</button>
                     <p class="text-center onaddpostmessage">{{formmessage}}</p>
                 </form>
             </div>
             <div class="feed" *ngFor="let document of documents">
                 <div>
-                    <img class="face-1" src="../../../assets/img/face1.jpg" alt="">
+                    <img class="face-1" src="../../../assets/img/nikunj.jpg" alt="">
                 </div>
                 <div>
                     <h4>
-                        Ishan Chabbra:
+                        Nikunj Panchal:
                     </h4>
                     <button class="skills">{{document.payload.doc.data().skilldetails}}</button>
                     <br>
@@ -39,7 +41,58 @@
                         {{document.payload.doc.data().details}}
                     </p>
                     <div>
-                        <span class="likesharecmnt" style="margin-top: 10px"><a>Apply</a> - <a>Share</a> - <a>Tag</a></span>
+                        <span class="likesharecmnt" style="margin-top: 10px"><a>Apply</a> - <a>Share</a> -
+                            <a>Tag</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="feed">
+                <div>
+                    <img class="face-1" src="../../../assets/homepage/images/person_2.jpg" alt="">
+                </div>
+                <div>
+                    <h4>
+                        Ishan Chabbra:
+                    </h4>
+                    <button class="skills">Python Developer</button>
+                    <br>
+                    <img class="location" src="../../../assets/img/location.svg" alt="">
+                    <p style="display: inline-block;">Chennai, India</p>
+                    <p>
+                        We are a technology company on a mission to equip students with relevant skills & practical
+                        exposure through internships and online training. Imagine a world full of freedom and
+                        possibilities. A world where you can discover your passion and turn it into your career.
+                        A world where your practical skills matter more than your university degree
+                    </p>
+                    <div>
+                        <span class="likesharecmnt" style="margin-top: 10px"><a>Apply</a> - <a>Share</a> -
+                            <a>Tag</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="feed">
+                <div>
+                    <img class="face-1" src="../../../assets/homepage/images/person_1.jpg" alt="">
+                </div>
+                <div>
+                    <h4>
+                        Arnab Ghosh:
+                    </h4>
+                    <button class="skills">Frontend Developer</button>
+                    <br>
+                    <img class="location" src="../../../assets/img/location.svg" alt="">
+                    <p style="display: inline-block;">New Delhi, India</p>
+                    <p>
+                        Icarus Innovations is a tech-based solutions provider with applications in the field of real
+                        estate, agriculture,
+                        inspection, mining, surveillance, railways, roadways and much more. As the tagline goes, the
+                        company uses cutting-edge technologies such as drones, artificial intelligence,
+                        machine learning, augmented & virtual reality to solve the problems of the world and innovate
+                        the future.
+                    </p>
+                    <div>
+                        <span class="likesharecmnt" style="margin-top: 10px"><a>Apply</a> - <a>Share</a> -
+                            <a>Tag</a></span>
                     </div>
                 </div>
             </div>
@@ -74,7 +127,7 @@
                     <h6><a routerLink="/alumnipanel/profile" routerLinkActive="active">Know More</a></h6>
                 </div>
             </div>
-            
+
         </div>
     </div>
 </body>
