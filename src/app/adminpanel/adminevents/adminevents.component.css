@@ -2,6 +2,13 @@ body {
     background-color: #F9F9F9!important ;
     height: 100vh;
 }
+.bg{
+    background-color: #f9f9f9 !important ;
+    height: 100vh; 
+    width: 100vw;
+    position: fixed;
+    z-index: -1;
+}
 
 .nav-head {
     position: absolute;
@@ -45,7 +52,7 @@ h2 {
 }
 
 .event-cards {
-    margin-left: 100px;
+    margin-left: 140px;
     display: flex;
     background-color: #fff;
     padding: 20px;
