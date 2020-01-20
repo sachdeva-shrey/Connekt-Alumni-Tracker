@@ -1,5 +1,7 @@
 body {
   background-color: #f9f9f9;
+  height: 200%;
+  /* overflow-y: hidden; */
 }
 
 .sidebar {
@@ -8,13 +10,11 @@ body {
   height: 300px !important;
 }
 
-.content {
-  grid-area: c;
-}
 
 .aside {
   grid-area: a;
   margin-right: 50px;
+  height: 500px !important;
 }
 
 .grid {
@@ -37,8 +37,12 @@ body {
   padding: 1rem;
   border: 1px solid #b4b4b4;
   font-size: 1rem;
-  height: 500px;
+  height: 800px;
 }
+.content {
+    grid-area: c;
+}
+  
 
 p {
   font-size: 12px;
@@ -98,20 +102,24 @@ h4 {
 .post {
   border: none;
   border-bottom: 1px solid #b4b4b4;
-  width: 450px;
   outline: none;
+  width:  100% !important; 
 }
 
 .btn-success {
   background-color: #727CF5;
   outline: none;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
+  /* position: relative !important;
+  top: -25px !important;
+  right: -20px !important; */
+  width: 100%;
 }
 span :hover{
     color: blue !important;
     cursor: pointer;
 }
-
-textarea{
-    width: 100% !important; 
+.onaddpostmessage{
+    /* color: rgb(6, 184, 6); */
+    font-size: 12px;
 }

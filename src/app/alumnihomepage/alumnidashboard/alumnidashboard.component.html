@@ -14,22 +14,23 @@
             <h6>NEWS FEED</h6>
             <hr>
             <div>
-                <form>
-                    <textarea class="post" rows="2" placeholder="Say Something..."></textarea>
-                    <button style="width: 70px; display: inline-block;" class="post btn btn-success">Post</button>
+                <form [formGroup]="newpostform">
+                    <textarea class="post" rows="4" placeholder="What's new?" formControlName="details"></textarea>
+                    <button class="btn btn-success" 
+                    (click)="createnewpost(newpostform)">Publish</button>
+                    <p class="text-center onaddpostmessage">{{formmessage}}</p>
                 </form>
             </div>
-            <div class="feed" *ngFor="let post of documents">
+            <div class="feed" *ngFor="let document of documents">
                 <div>
                     <img class="face-1" src="../../../assets/img/face1.jpg" alt="">
                 </div>
                 <div>
                     <h4>
-                        {{post.head}}
-
+                        Yash Copra says
                     </h4>
                     <p>
-                        {{post.details}}
+                        {{document.payload.doc.data().details}}
                     </p>
                     <div>
                         <span class="likesharecmnt" style="margin-top: 10px"><a>Apply</a> - <a>Share</a> - <a>Tag</a></span>

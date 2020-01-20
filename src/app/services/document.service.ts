@@ -1,5 +1,5 @@
 import { Injectable, NgZone } from "@angular/core";
-import { Document, eventtype } from "../_model/document";
+import { Document, eventtype, posttype } from "../_model/document";
 import { AngularFirestore } from "@angular/fire/firestore";
 import { AngularFireAuth } from "@angular/fire/auth";
 import { Observable } from "rxjs";
@@ -13,10 +13,10 @@ export class DocumentService {
     private firestore: AngularFirestore,
     private angularFireAuth: AngularFireAuth,
     public router: Router,
-    public ngZone: NgZone) 
-    {
-        this.userData = angularFireAuth.authState;
-    }
+    public ngZone: NgZone
+  ) {
+    this.userData = angularFireAuth.authState;
+  }
 
   SendVerificationMail() {
     return this.angularFireAuth.auth.currentUser
@@ -36,17 +36,23 @@ export class DocumentService {
       .then(res => {
         this.SendVerificationMail();
         return new Promise<any>((resolve, reject) => {
-            this.firestore.collection("documents").add(document)
-                .then(res => {
-                    resolve(res);
-                },
-                err => reject(err)
-                );
-            this.firestore.collection("acceptedusersdb").add(document)
-            .then(res => {
+          this.firestore
+            .collection("documents")
+            .add(document)
+            .then(
+              res => {
                 resolve(res);
-                },
-                err => reject(err)
+              },
+              err => reject(err)
+            );
+          this.firestore
+            .collection("acceptedusersdb")
+            .add(document)
+            .then(
+              res => {
+                resolve(res);
+              },
+              err => reject(err)
             );
         });
       })
@@ -101,7 +107,7 @@ export class DocumentService {
       });
   }
 
-/****************************
+  /****************************
 ---------Events
 ****************************/
 
@@ -119,14 +125,6 @@ export class DocumentService {
         );
     });
   }
-  //Getevent
-  GetEvent(id: string) {
-    return this.firestore
-      .collection("documents")
-      .doc(id)
-      .snapshotChanges();
-  }
-  // Get eventlist
 
   GetEventList() {
     return this.firestore.collection("eventsdb").snapshotChanges();
@@ -139,16 +137,26 @@ export class DocumentService {
       .delete();
   }
 
-/*************************************
+  /*************************************
     Alumni Dashboard Events
 *************************************/
-GetPostList() {
+  GetPostList() {
     return this.firestore.collection("alumniposts").snapshotChanges();
   }
+  //Add a event
+  AddPost(post: posttype) {
+    return new Promise<any>((resolve, reject) => {
+      this.firestore
+        .collection("alumniposts")
+        .add(post)
+        .then(
+          res => {
+            resolve(res);
+          },
+          err => reject(err)
+        );
+    });
+  }
 
-
-
-
-  
   //closing tag
 }
