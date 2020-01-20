@@ -22,6 +22,5 @@ export class AdmineventsComponent implements OnInit {
     .subscribe(res => {
       this.documents = res;
     });
-
-
+    deleteevent = data => this._documentService.DeleteEvent(data);
 }

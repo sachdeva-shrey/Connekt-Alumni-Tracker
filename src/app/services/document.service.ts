@@ -122,7 +122,13 @@ export class DocumentService {
     GetEventList() {
 	return this.firestore.collection("eventsdb").snapshotChanges();
     }
-
+// Delete Event
+  DeleteEvent(data) {
+    return this.firestore
+      .collection("eventsdb")
+      .doc(data.payload.doc.data().details)
+      .delete();
+  }
 
 
  //closing tag 

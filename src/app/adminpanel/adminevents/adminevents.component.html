@@ -7,7 +7,6 @@
 
     <h4>Events</h4>
     <button class="add-event btn btn-success" type="button" routerLink="/adminpanel/events/create/">Add Event</button>
-    <button class="delete-event btn btn-danger" type="button"> Delete Event</button>
     <div class="event-cards" *ngFor="let document of documents">
         <div>
             <h2>{{ document.payload.doc.data().title }}</h2>
@@ -28,6 +27,9 @@
                 <div>
                     <p class="eventdetailshead1">Time</p>
                     <p>{{ document.payload.doc.data().time}}</p>
+                </div>
+                <div>
+                    <button class="delete-event btn btn-danger" type="button" (onclick)="deleteevent(document)"> Delete Event</button>
                 </div>
             </div>
         </div>
