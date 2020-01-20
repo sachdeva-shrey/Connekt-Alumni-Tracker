@@ -1,0 +1,162 @@
+@font-face {
+  font-family: 'Bahnschrift';
+  src: url(../../assets/fonts/bahnschrift.ttf);
+}
+
+@font-face {
+  font-family: 'SF-UI';
+  src: url(../../assets/fonts/SF-UI-Display-Regular.otf);
+}
+
+body {
+  overflow-y: 0;
+}
+
+h1 {
+  font-family: 'SF-UI';
+  font-size: 38px;
+  margin: auto;
+  text-align: center;
+  margin-top: 18%;
+}
+
+h2 {
+  font-size: 20px;
+  color: var(--primary-color);
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.shortcut img {
+  height: 30px;
+  width: auto;
+  padding-left: 10px;
+}
+
+.shortcut {
+  display: inline-block;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  width: 200px;
+  padding: 8px 20px;
+  margin-left: 20px;
+  cursor: pointer;
+  border: 0.6px solid #ccc;
+}
+
+.shortcut h4 {
+  font-size: 14px;
+  padding-left: 20px;
+  margin-top: 10px;
+
+}
+
+.shortcut-account {
+  display: flex;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.resendemail {
+  display: block;
+  color: var(--primary-color);
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.illustration {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  height: 350px;
+  width: auto;
+}
+
+.verification {
+  position: absolute;
+  top: 50%;
+  left: 33%;
+}
+
+.profile-illustration {
+  position: absolute;
+  top: 30%;
+  left: 22%;
+  height: 310px;
+  width: auto;
+}
+
+#continue {
+  height: 40px;
+}
+
+@media only screen and (device-width : 375px) and (device-height : 812px) {
+  h1 {
+    font-size: 24px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 70%;
+    width: 300px
+  }
+
+  h2 {
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .shortcut img {
+    display: inline-block;
+    height: 30px;
+    width: auto;
+    padding-left: 10px;
+  }
+
+  .shortcut-account {
+    display: block;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .shortcut {
+    display: block !important;
+    border: 0.6px solid var(--grey-color);
+    border-radius: 15px;
+    display: block;
+    flex-direction: row;
+    width: 250px !important;
+    padding: 8px 20px;
+    cursor: pointer;
+  }
+
+  .shortcut h4 {
+    font-size: 14px;
+    padding-left: 20px;
+
+  }
+
+  .resendemail {
+    margin-left: 45%;
+    font-size: 18px;
+  }
+
+  .illustration {
+    position: absolute;
+    top: 10%;
+    left: 26%;
+    height: 200px;
+    width: auto;
+  }
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  margin: 15px;
+}
