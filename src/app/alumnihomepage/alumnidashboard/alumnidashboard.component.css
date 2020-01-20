@@ -14,7 +14,7 @@ body {
 .aside {
   grid-area: a;
   margin-right: 50px;
-  height: 00px !important;
+  height: 500px !important;
 }
 
 .grid {
