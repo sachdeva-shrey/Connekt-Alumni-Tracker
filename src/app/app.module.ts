@@ -32,6 +32,7 @@ import { AdminauthComponent } from './adminpanel/adminauth/adminauth.component';
 import { AlumnieventsComponent } from './alumnihomepage/alumnievents/alumnievents.component';
 import { AllalumniComponent } from './adminpanel/allalumni/allalumni.component';
 import { StudentComponent } from './student/student.component';
+import { StudentnavComponent } from './student/studentnav/studentnav.component';
   
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { StudentComponent } from './student/student.component';
     AlumnieventsComponent,
     AllalumniComponent,
     StudentComponent,
+    StudentnavComponent,
   ],
   imports: [
     BrowserModule,
