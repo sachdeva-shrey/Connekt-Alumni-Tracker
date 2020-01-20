@@ -19,8 +19,8 @@
         <td>{{ document.payload.doc.data().year }}</td>
         <td>{{ document.payload.doc.data().regno}}</td>
         <td></td>
-        <td><button class="btn btn-accept">Accept</button></td>
-        <td><button (click)="reject(document)" class="btn btn-reject">Reject</button></td>
+        <td><button class="btn btn-accept" (click)="accept(document)">Accept</button></td>
+        <td><button class="btn btn-reject" (click)="reject(document)" >Reject</button></td>
     </tr>
 </table>
 </div>

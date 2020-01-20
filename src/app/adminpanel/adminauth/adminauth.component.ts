@@ -14,12 +14,24 @@ export class AdminauthComponent implements OnInit {
   ngOnInit() {
     this.getEvents();
   }
+//   get events
   getEvents = () =>
   this._documentService
     .GetDocumentList()
     .subscribe(res => {
       this.documents = res;
     });
-
+// reject user
   reject = data => this._documentService.DeleteDocument(data);
+// accept user
+addusertoaccpteddb(data){
+      
+}
+
+  accept(data){
+    alert("User accpeted scuessfully");
+    this.addusertoaccpteddb(data);
+    this.reject(data);
+  }
+
 }
