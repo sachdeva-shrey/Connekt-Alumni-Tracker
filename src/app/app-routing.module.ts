@@ -31,6 +31,7 @@ import { Error404Component } from './error404/error404.component';
 
 const routes: Routes = [
     // Login 
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path : 'alumnilogin' , component : LoginComponent},
     { path : 'alumnilogin/verifyemail' , component : VerifyemailComponent},
     { path : 'adminlogin' , component : AdminloginComponent},
@@ -56,10 +57,8 @@ const routes: Routes = [
     { path :'student/profile' ,component : StudentprofileComponent} ,
 
     //error404
-    { path :'**' ,component : Error404Component} ,
+    { path :'**' ,component : Error404Component} 
 
-
-    { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 
 @NgModule({
