@@ -5,12 +5,9 @@
 
 body {
   background-color: #F9F9F9;
-
 }
 
 .nav-head {
-  position: absolute;
-  top: 0;
   height: 8%;
   width: 100%;
   background-color: #fff;
@@ -150,7 +147,6 @@ nav.main-menu li.active>a,
 
 h4 {
   margin: 0px 100px 50px 100px;
-  padding-top: 100px;
   color: #323A47;
 }
 
@@ -203,6 +199,7 @@ h3 {
 }
 
 .logo {
-  height: 50px;
-  width: auto
+  height: 30px;
+  width: auto;
+  margin-top: 5px;
 }

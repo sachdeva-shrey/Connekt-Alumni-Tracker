@@ -10,24 +10,37 @@ import * as pluginAnnotations from 'chartjs-plugin-annotation';
 })
 export class AdminchartsComponent implements OnInit {
   public lineChartData: ChartDataSets[] = [
-    { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' },
-    { data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B' }
+    { data: [65, 59, 80, 81, 56, 55, 40], label: 'Student ' },
+    { data: [28, 48, 40, 19, 86, 27, 90], label: 'Alumni' }
   ];
   public lineChartLabels: Label[] = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-  public lineChartOptions: (ChartOptions & { annotation: any }) = {
+  public lineChartOptions: (ChartOptions ) = {
     responsive: true,
+    title: {
+      text: 'Registrations',
+      display: true,
+        fontSize: 25
+      
+    },
     legend: {
       display: true,
       labels: {
           fontColor: '#727cf5',
-          fontSize: 38
+          fontSize: 20
+          
       }
   },
     scales: {
       // We use this empty structure as a placeholder for dynamic theming.
       xAxes: [{
         ticks: {
-          fontSize: 25
+          fontSize: 16
+        },
+        scaleLabel: {
+          display: true,
+          labelString: 'Months',
+          fontSize: 18,
+          color: '#000000'
         }
       }],
       yAxes: [
@@ -35,7 +48,7 @@ export class AdminchartsComponent implements OnInit {
           id: 'y-axis-0',
           position: 'left',
           ticks: {
-            fontSize: 22
+            fontSize: 18
           }
         },
       ]
