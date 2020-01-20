@@ -3,6 +3,14 @@
     font-family: 'maison-neue';
 }
 
+#home-section {
+    background-image: url(../../assets/img/SRMUB.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    filter: blur(25%);
+}
+
 .mx-auto p {
     font-family: maison-neue;
 }
