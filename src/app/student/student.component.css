@@ -14,7 +14,7 @@ body {
   .aside {
     grid-area: a;
     margin-right: 50px;
-    height: 500px !important;
+    height: 480px !important;
   }
   
   .grid {
@@ -85,7 +85,7 @@ body {
   
   .feed {
     display: flex;
-    margin-top: 30px;
+    margin-top: 50px;
     padding-bottom: 20px;
     border-bottom: 0.3px solid #cccccc;
   }
@@ -131,3 +131,31 @@ body {
       font-size: 12px;
   }
   
+  h6 {
+    font-size: 12px;
+  }
+  
+  ::placeholder {
+    font-size: 12px;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  .skills {
+    border: none;
+    background-color: #727CF5;
+    border-radius: 10px;
+    color: white;
+    font-size: 10px;
+    margin-right: 4px;
+  }
+  
+  
+  .location {
+    height: 15px;
+    width: auto;
+    display: inline-block;
+    margin-right: 5px;
+  }

@@ -1,3 +1,12 @@
+@font-face {
+    src: url(../../assets/fonts/Maison-Bold.ttf);
+    font-family: 'maison-neue';
+}
+
+.mx-auto p {
+    font-family: maison-neue;
+}
+
 #next-section .card {
     height: 15vh;
     width: 17vh;

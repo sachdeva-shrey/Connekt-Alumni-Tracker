@@ -15,7 +15,9 @@
             <hr>
             <div>
                 <form [formGroup]="newpostform">
-                    <textarea class="post" rows="4" placeholder="What's new?" formControlName="details"></textarea>
+                    <textarea class="post" rows="2" placeholder="Describe the opportunity?" formControlName="details"></textarea>
+                    <textarea class="post" rows="2" placeholder="What are the skills required?" formControlName="skilldetails"></textarea>
+                    <textarea class="post" rows="2" placeholder="Where is it located?" formControlName="locationdetails"></textarea>
                     <button class="btn btn-success" 
                     (click)="createnewpost(newpostform)">Publish</button>
                     <p class="text-center onaddpostmessage">{{formmessage}}</p>
@@ -27,8 +29,12 @@
                 </div>
                 <div>
                     <h4>
-                        Yash Copra says
+                        Ishan Chabbra:
                     </h4>
+                    <button class="skills">{{document.payload.doc.data().skilldetails}}</button>
+                    <br>
+                    <img class="location" src="../../../assets/img/location.svg" alt="">
+                    <p style="display: inline-block;">{{document.payload.doc.data().locationdetails}}</p>
                     <p>
                         {{document.payload.doc.data().details}}
                     </p>
@@ -51,25 +57,25 @@
                 </div>
             </div>
             <div class="notice">
-                <h4>Your connection, Shrey Sachdeva is attending the SIH Hackathon.</h4>
+                <h4>Yaksh is attending MOZOFEST'20.</h4>
                 <div>
                     <h6>Like - Comment - Redirect</h6>
                 </div>
             </div>
             <div class="notice">
-                <h4>Your connection, Shrey Sachdeva is attending the SIH Hackathon.</h4>
+                <h4>Harsh Goel, started a new position at Alphabet Inc.</h4>
                 <div>
                     <h6>Like - Comment - Redirect</h6>
                 </div>
             </div>
             <div class="notice">
-                <h4>Your connection, Shrey Sachdeva is attending the SIH Hackathon.</h4>
+                <h4>Congratulate Shrey Sachdeva on getting promoted as a new Tech position at SRMKZILLA.</h4>
                 <div>
                     <h6>Like - Comment - Redirect</h6>
                 </div>
             </div>
             <div class="notice">
-                <h4>Your connection, Shrey Sachdeva is attending the SIH Hackathon.</h4>
+                <h4>A new job role opened at HCL Technologies.</h4>
                 <div>
                     <h6>Like - Comment - Redirect</h6>
                 </div>
