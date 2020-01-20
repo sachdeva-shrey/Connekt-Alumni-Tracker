@@ -1,0 +1,308 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Alumni Tracking System</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../assets/homepage/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="../../assets/homepage/fonts/line-icons/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .bbb .fa {
+            color: #C7D1D8;
+            height: 20px;
+            width: 20px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .bbb .fa:hover {
+            color: #fff;
+        }
+
+        .bbb nav {
+            background-color: #323A47;
+            /* background-color: #727CF5; */
+            height: 55px;
+        }
+
+        .bbb .nav>div:nth-child(2) {
+            display: flex;
+            margin-left: 50%
+        }
+
+        .bbb .nav>div>div:nth-child(n) {
+            margin-right: 35px;
+            text-align: center;
+            padding-top: 8px;
+        }
+
+        .bbb  .nav>div>div:nth-child(n):hover {
+            color: #fff;
+        }
+
+
+        .bbb p {
+            color: #C7D1D8;
+            font-size: 12px;
+        }
+
+        .bbb p:hover {
+            color: #fff;
+        }
+
+        .bbb  a {
+            text-align: left;
+        }
+
+        .bbb .vertical-line {
+            width: 2px;
+            height: 55px;
+            background-color: #C7D1D8;
+        }
+
+        .bbb .dropdown {
+            margin-left: 30px;
+            padding-top: 8px;
+        }
+
+        .bbb .logo {
+            height: 30px;
+            position: absolute;
+            top: 0;
+            width: auto;
+            margin-top: 15px;
+            margin-left: 20px;
+        }
+
+        .bbb .profile-small {
+            height: 30px;
+            border-radius: 20px;
+        }
+
+
+
+        .aaa .sidebar {
+            grid-area: s;
+            margin-left: 50px;
+            height: 300px !important;
+        }
+
+        .aaa .content {
+            grid-area: c;
+        }
+
+        .aaa .aside {
+            grid-area: a;
+            margin-right: 50px;
+        }
+
+        .aaa .grid {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: 80px minmax(400px, auto) 50px;
+            grid-gap: 1em;
+            grid-template-areas:
+                "s c";
+        }
+
+        .aaa .grid-item {
+            display: grid;
+        }
+
+        .aaa .grid-item {
+            display: block;
+            margin-top: 50px;
+            background-color: #fff;
+            padding: 1rem;
+            font-size: 1rem;
+            height: 500px;
+        }
+
+        .aaa p {
+            font-size: 12px;
+        }
+
+        .aaa h4 {
+            font-size: 14px
+        }
+
+        .aaa .profile {
+            height: 150px;
+            width: auto;
+            display: block;
+            margin: auto;
+            margin-bottom: 25px;
+        }
+
+        .aaa .location {
+            height: 15px;
+            width: auto;
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .aaa h5 {
+            margin: 0px !important;
+        }
+
+        .aaa .chat {
+            height: 20px;
+            width: auto;
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .aaa .message {
+            background-color: #727CF5;
+            border: none;
+            border-radius: 10px;
+            width: 150px;
+            outline: none;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bbb">
+        <nav class="nav">
+            <div>
+                <img class="logo" src="./Conneckt_logo_white.png" alt="logo">
+            </div>
+            <div>
+                <div class="navitems">
+                    <a routerLink="/alumnipanel">
+                        <i class="fa fa-lg fa-home"></i>
+                        <p>Home</p>
+                    </a>
+                </div>
+                <div>
+                    <i class="fa fa-lg fa-users"></i>
+                    <p>My Network</p>
+                </div>
+                <div>
+                    <a routerLink="/alumnipanel/events">
+                        <i class="fa far fa-lg fa-calendar"></i>
+                        <p>Events</p>
+                    </a>
+                </div>
+                <div>
+                    <i class="fa fa-lg fa-envelope"></i>
+                    <p>Messaging</p>
+                </div>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="profile-small" src="nikunj.jpg">
+                    Nikunj Panchal
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" routerLink="/alumnipanel/profile">Profile</a>
+                    <a class="dropdown-item" routerLink="/home">Logout</a>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="aaa">
+        <div class="grid">
+            <div class="grid-item sidebar">
+                <img class="profile" src="nikunj.jpg">
+                <hr>
+                <p style="color: rgb(121, 121, 121)">WORK</p>
+                <h4>SRM Innovation and Incubation Centre</h4>
+                <p>Manager</p>
+                <p>Jun 2015 - present</p>
+                <h4 style="margin-top: 25px">SRM Fab Lab</h4>
+                <p>Manager</p>
+                <p>Jun 2016 - present</p>
+                <hr>
+                <p style="color: rgb(121, 121, 121)">SKILLS</p>
+                <h4 style="margin-top: 25px">PROJECT MANAGEMENT, TEAM LEADERSHIP, MANAGEMENT</h4>
+            </div>
+            <div class="grid-item content">
+                <h5 style="margin-top: 30px">Nikunj Panchal</h5>
+                <p style="color: #727CF5">Manager</p>
+                <p style="margin: 0 !important;">SRM Innovation and Incubation Centre</p>
+                <p style="margin: 0 !important;">Batch of 2015</p>
+                <div style="display: flex;"><img class="location" src="location.svg" alt="">
+                    <p>Chennai, India</p>
+                </div>
+                <button class="message" (click)="chat()"> <img class="chat" src="chat.svg" alt="">
+                    <h4 style="display: inline-block;color: #fff;">Send Message</h4>
+                </button>
+                <button class="message"> <img class="chat" src="flag.svg" alt="">
+                    <h4 style="display: inline-block;color: #fff;">Report User</h4>
+                </button>
+                <hr>
+                <p style="color: rgb(121, 121, 121)">BASIC INFORMATION</p>
+                <p><b>Birthday : </b>Jul 3, 2000</p>
+                <p><b>Gender : </b>Male</p>
+                <hr>
+                <p style="color: rgb(121, 121, 121)">CONTACT INFORMATION</p>
+                <p><b>Phone : </b>+91-9136-895259</p>
+                <p><b>Address : </b>N/A</p>
+                <p><b>Email : </b>np8181@srmist.edu.in</p>
+                <p><b>Site : </b>nikunjpanchal.com</p>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+
+
+        <!-- Scripts -->
+        <script src="../../assets/homepage/js/jquery.min.js"></script>
+        <script src="../../assets/homepage/js/bootstrap.bundle.min.js"></script>
+        <script src="../../assets/homepage/js/isotope.pkgd.min.js"></script>
+        <script src="../../assets/homepage/js/stickyfill.min.js"></script>
+        <script src="../../assets/homepage/js/jquery.fancybox.min.js"></script>
+        <script src="../../assets/homepage/js/jquery.easing.1.3.js"></script>
+        <script src="../../assets/homepage/js/jquery.waypoints.min.js"></script>
+        <script src="../../assets/homepage/js/jquery.animateNumber.min.js"></script>
+        <script src="../../assets/homepage/js/custom.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+        <script type="text/javascript">
+            /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+            (function (d, m) {
+                var kommunicateSettings = { "appId": "a8dc7752e34d32dd71b3e8a5a8c832bf", "popupWidget": true, "automaticChatOpenOnNavigation": true };
+                var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+                s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+                var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+                window.kommunicate = m; m._globals = kommunicateSettings;
+            })(document, window.kommunicate || {});
+        </script>
+
+
+</body>
+
+</html>

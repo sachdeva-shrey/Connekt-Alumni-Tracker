@@ -40,7 +40,6 @@ export class AdminchartsComponent implements OnInit {
           display: true,
           labelString: 'Months',
           fontSize: 18,
-          color: '#000000'
         }
       }],
       yAxes: [
