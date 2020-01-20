@@ -53,10 +53,11 @@ h2 {
 }
 
 .event-cards:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   transition: 0.2s ease-in;
 }
-.event-details {  
+
+.event-details {
   display: flex;
 }
 

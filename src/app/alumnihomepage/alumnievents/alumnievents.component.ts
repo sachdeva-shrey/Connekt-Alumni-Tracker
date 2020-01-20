@@ -23,12 +23,9 @@ export class AlumnieventsComponent implements OnInit {
       this.documents = res;
     });
 
-
     deleteevent(data){
         this._documentService.DeleteEvent(data);
     }
-
-
 }
 
 

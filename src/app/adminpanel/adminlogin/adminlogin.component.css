@@ -1,0 +1,122 @@
+:root {
+  --primary-color-dark: #323A47;
+  --background-color: #F9F9F9;
+  --primary-blue: #727CF5;
+}
+
+@font-face {
+  font-family: 'Bahnschrift';
+  src: url(../../../assets/fonts/bahnschrift.ttf);
+}
+
+@font-face {
+  font-family: 'SF-UI';
+  src: url(../../../assets/fonts/SF-UI-Display-Regular.otf);
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+label {
+  font-family: 'SF-UI';
+  font-size: 12px;
+  color: #323A47;
+}
+
+.container {
+  padding-top: 20px;
+  height: 500px !important;
+  padding-top: 10%;
+  padding-left: 30%;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.login-box {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 25px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.form-control {
+  width: 50%;
+}
+
+input:focus {
+  outline: none !important;
+  border: 1px solid #727CF5;
+  box-shadow: 0 0 2px #323A47;
+}
+
+.login-box .alumni-reg-heading {
+  font-size: 30px;
+  font-family: 'Bahnschrift';
+  border-left: 4px solid #727CF5;
+  padding-left: 20px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  margin-bottom: 10px;
+}
+
+.official-login {
+  margin: 2% auto;
+}
+
+.slider {
+  background-color: #727CF5;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  z-index: 10;
+  width: 35%;
+  transition-duration: 1s;
+  left: 65%;
+  border-radius: 25px;
+}
+
+.register-font {
+  margin-top: 300px;
+  font-size: 30px;
+  color: white;
+  font-family: 'Bahnschrift';
+}
+
+.slider h6 {
+  color: #fff;
+  margin: 0px 0px;
+
+}
+
+h6 {
+  font-size: 14px !important;
+  font-family: 'SF-UI';
+  color: #323A47;
+  padding-top: 10px;
+}
+
+button[type="submit"] {
+  background-color: #727CF5;
+  border: none;
+  width: 50%;
+  margin-top: 20px;
+  font-family: 'SF-UI';
+  letter-spacing: 1px;
+}
+
+button:hover,
+button:active,
+button:focus {
+  background-color: rgb(88, 97, 196) !important;
+}
+
+.colno2 .form-group {
+  margin-right: -20px;
+}
+
+.submit-btn {
+  background-color: #727CF5;
+  border: none;
+}
