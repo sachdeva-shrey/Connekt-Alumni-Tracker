@@ -1,0 +1,10 @@
+.chartjs {
+    height: 400px !important;
+    width: 600px !important;
+}
+.flex-item h3{
+    
+    padding-top: 20px;
+    padding-left: 20px;
+    color:#727cf5;
+}

@@ -19,33 +19,6 @@
         <h2>4,567</h2>
     </div>
 </div>
-
-<<<<<<< HEAD
-
-
-<h4 style="margin-top: 50px;">ANALYTICS</h4>
-<div class="invite-table">
-<table id="auth">
-    <tr>
-        <th>Name</th>
-        <th>College</th>
-        <th>Batch</th>
-        <th>Reg. No.</th>
-        <th></th>
-        <th>Accept</th>
-        <th>Reject</th>
-
-    </tr>
-    <tr *ngFor="let document of documents">
-        <td>{{ document.payload.doc.data().firstname }}</td>
-        <td>{{ document.payload.doc.data().college }}</td>
-        <td>{{ document.payload.doc.data().year }}</td>
-        <td>{{ document.payload.doc.data().regno}}</td>
-        <td></td>
-        <td><button class="btn btn-accept">Accept</button></td>
-        <td><button (click)="reject(document.id)" class="btn btn-reject">Reject</button></td>
-    </tr>
-</table>
+<div class="chartscont">
+    <app-admincharts></app-admincharts>
 </div>
-=======
->>>>>>> 12ee051a4ad7b68997422a0ae8986f7a3b2c6d9d
