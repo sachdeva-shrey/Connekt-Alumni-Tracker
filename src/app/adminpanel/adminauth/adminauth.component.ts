@@ -25,11 +25,11 @@ export class AdminauthComponent implements OnInit {
   reject = data => this._documentService.DeleteDocument(data);
 // accept user
 addusertoaccpteddb(data){
-      
+    this._documentService.Moveuser(data);
+    alert("User accpeted scuessfully");
 }
 
   accept(data){
-    alert("User accpeted scuessfully");
     this.addusertoaccpteddb(data);
     this.reject(data);
   }

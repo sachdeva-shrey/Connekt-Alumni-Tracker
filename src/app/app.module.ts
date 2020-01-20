@@ -29,6 +29,7 @@ import { AdminneweventComponent } from './adminpanel/adminevents/adminnewevent/a
 import { CommonnavbarComponent } from './home/commonnavbar/commonnavbar.component';
 import { CommonfooterComponent } from './home/commonfooter/commonfooter.component';
 import { AdminauthComponent } from './adminpanel/adminauth/adminauth.component';
+import { AlumnieventsComponent } from './alumnihomepage/alumnievents/alumnievents.component';
   
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { AdminauthComponent } from './adminpanel/adminauth/adminauth.component';
     CommonnavbarComponent,
     CommonfooterComponent,
     AdminauthComponent,
+    AlumnieventsComponent,
   ],
   imports: [
     BrowserModule,
