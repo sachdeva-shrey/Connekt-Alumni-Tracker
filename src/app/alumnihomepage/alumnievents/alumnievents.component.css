@@ -14,10 +14,9 @@ body {
   padding-top: 10px;
 }
 
-
 h4 {
-  margin: 0px 100px 50px 100px;
-  padding-top: 100px;
+  margin: 0px 100px 20px 100px;
+  padding-top: 50px;
   color: #323A47;
 }
 
@@ -47,13 +46,17 @@ h2 {
 .event-cards {
   margin-left: 100px;
   display: flex;
-  background-color: #fff;
+  background-color: #f9f9f9;
   padding: 20px;
   width: 85%;
   margin-bottom: 30px;
 }
 
-.event-details {
+.event-cards:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: 0.2s ease-in;
+}
+.event-details {  
   display: flex;
 }
 
@@ -73,7 +76,7 @@ h2 {
 
 .eventdetailshead {
   color: gray;
-  font-size: 20px;
+  font-size: 18px;
   padding-top: 60px;
 }
 
@@ -83,3 +86,6 @@ h2 {
   padding-top: 10px;
 }
 
+p {
+  font-size: 14px;
+}
