@@ -1,1 +1,39 @@
-<p>studentnav works!</p>
+<nav class="nav">
+    <div>
+        <img class="logo" src="../../../assets/img/Conneckt_logo_white.png" alt="logo">
+    </div>
+    <div>
+        <div class="navitems">
+            <a routerLink="/alumnipanel">
+                <i class="fa fa-lg fa-home"></i>
+                <p>Home</p>
+            </a>
+        </div>
+        <div>
+            <i class="fa fa-lg fa-users"></i>
+            <p>My Network</p>
+        </div>
+        <div>
+            <a routerLink="/alumnipanel/events">
+                <i class="fa far fa-lg fa-calendar"></i>
+                <p>Events</p>
+            </a>
+        </div>
+        <div>
+            <i class="fa fa-lg fa-envelope"></i>
+            <p>Messaging</p>
+        </div>
+    </div>
+    <div class="vertical-line"></div>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <img class="profile-small" src="../../../assets/img/profile.jpg" alt="">
+            Shrey Sachdeva
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" routerLink="/alumnipanel/profile">Profile</a>
+            <a class="dropdown-item" href="#">Settings</a>
+        </div>
+    </div>
+</nav>

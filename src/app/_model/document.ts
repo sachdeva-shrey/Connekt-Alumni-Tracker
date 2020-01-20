@@ -21,5 +21,7 @@ export interface eventtype{
 export interface posttype{
     $key :string,
     title : string,
-    details : string
+    details : string,
+    skilldetails :string,
+    locationdetails :string
 }
