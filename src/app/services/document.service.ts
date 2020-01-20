@@ -1,5 +1,5 @@
 import { Injectable, NgZone } from "@angular/core";
-import { Document, eventtype } from "../_model/document";
+import { Document, eventtype, posttype } from "../_model/document";
 import { AngularFirestore } from "@angular/fire/firestore";
 import { AngularFireAuth } from "@angular/fire/auth";
 import { Observable } from "rxjs";
@@ -22,9 +22,13 @@ export class DocumentService {
     return this.angularFireAuth.auth.currentUser
       .sendEmailVerification()
       .then(() => {
-        this.router.navigate(["login/verifyemail"]);
+        this.router.navigate(["alumnilogin/verifyemail"]);
       });
   }
+  /************************************************
+                    Users
+  *************************************************/
+
   /* Add Document */
   AddDocument(document: Document) {
     this.angularFireAuth.auth
@@ -41,12 +45,22 @@ export class DocumentService {
               },
               err => reject(err)
             );
+          this.firestore
+            .collection("acceptedusersdb")
+            .add(document)
+            .then(
+              res => {
+                resolve(res);
+              },
+              err => reject(err)
+            );
         });
       })
       .catch(error => {
         alert(error.message);
       });
   }
+
   /* Get Document */
   GetDocument(id: string) {
     return this.firestore
@@ -75,6 +89,7 @@ export class DocumentService {
       .doc(data.payload.doc.id)
       .delete();
   }
+
   /* Signin */
   SignIn(email: string, password: string) {
     this.angularFireAuth.auth
@@ -91,12 +106,12 @@ export class DocumentService {
         alert(err.message);
       });
   }
-/****************************
+
+  /****************************
 ---------Events
 ****************************/
 
-
-//Add a event
+  //Add a event
   AddEvent(event: eventtype) {
     return new Promise<any>((resolve, reject) => {
       this.firestore
@@ -110,26 +125,38 @@ export class DocumentService {
         );
     });
   }
-//Getevent
-  GetEvent(id: string) {
-	return this.firestore
-	  .collection("documents")
-	  .doc(id)
-	  .snapshotChanges();
-    }
-// Get eventlist
 
-    GetEventList() {
-	return this.firestore.collection("eventsdb").snapshotChanges();
-    }
-// Delete Event
+  GetEventList() {
+    return this.firestore.collection("eventsdb").snapshotChanges();
+  }
+  // Delete Event
   DeleteEvent(data) {
     return this.firestore
       .collection("eventsdb")
       .doc(data.payload.doc.id)
-      .delete()
+      .delete();
   }
 
+  /*************************************
+    Alumni Dashboard Events
+*************************************/
+  GetPostList() {
+    return this.firestore.collection("alumniposts").snapshotChanges();
+  }
+  //Add a event
+  AddPost(post: posttype) {
+    return new Promise<any>((resolve, reject) => {
+      this.firestore
+        .collection("alumniposts")
+        .add(post)
+        .then(
+          res => {
+            resolve(res);
+          },
+          err => reject(err)
+        );
+    });
+  }
 
- //closing tag 
+  //closing tag
 }

@@ -9,16 +9,13 @@
 .fa:hover {
   color: #fff;
 }
-
+    
 nav {
   background-color: #323A47;
   /* background-color: #727CF5; */
   height: 55px;
 }
-.nav-logo{
-    z-index: 100;
-    width: 200px;
-}
+
 .nav>div:nth-child(2) {
   display: flex;
   margin-left: 50%
@@ -49,12 +46,26 @@ a {
 }
 
 .vertical-line {
-    width: 2px;
-    height: 55px;
-    background-color: #C7D1D8;
+  width: 2px;
+  height: 55px;
+  background-color: #C7D1D8;
 }
 
 .dropdown {
-    margin-left: 30px;
-    padding-top: 8px;
+  margin-left: 30px;
+  padding-top: 8px;
+}
+
+.logo {
+  height: 30px;
+  position: absolute;
+  top: 0;
+  width: auto;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.profile-small {
+  height: 30px;
+  border-radius: 20px;
 }

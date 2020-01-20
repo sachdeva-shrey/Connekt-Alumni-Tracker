@@ -1,5 +1,7 @@
 body {
   background-color: #f9f9f9;
+  height: 200%;
+  /* overflow-y: hidden; */
 }
 
 .sidebar {
@@ -8,13 +10,11 @@ body {
   height: 300px !important;
 }
 
-.content {
-  grid-area: c;
-}
 
 .aside {
   grid-area: a;
   margin-right: 50px;
+  height: 00px !important;
 }
 
 .grid {
@@ -37,36 +37,96 @@ body {
   padding: 1rem;
   border: 1px solid #b4b4b4;
   font-size: 1rem;
-  height: 500px;
+  height: 1200px;
 }
+.content {
+    grid-area: c;
+}
+  
 
 p {
   font-size: 12px;
   margin: 0;
   margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .profile {
   margin-bottom: 30px;
 }
 
-h6 {
-    font-size: 12px;
-    color: rgb(26, 26, 26);
+.likesharecmnt{
+  font-size: 12px !important;
+  color: rgb(26, 26, 26);
+  font-weight: 500;
 }
 
 h4 {
-    font-size: 14px
+  font-size: 14px
 }
 
 .notice {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .profile {
-    height: 100px;
-    width: auto;
-    border-radius: 60px;
-    display: block;
-    margin: auto;
+  height: 100px;
+  width: auto;
+  border-radius: 60px;
+  display: block;
+  margin: auto;
+}
+
+.face-1 {
+  height: 70px;
+  width: auto;
+  border-radius: 50px;
+}
+
+.feed {
+  display: flex;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: 0.3px solid #cccccc;
+}
+
+.feed>div:nth-child(2) {
+  margin-left: 20px
+}
+
+.option-icons {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.post {
+  border: none;
+  border-bottom: 1px solid #b4b4b4;
+  outline: none;
+  width:  100% !important; 
+}
+
+.btn-success {
+  background-color: #727CF5 !important;
+  outline: none;
+  /* margin-bottom: 30px; */
+  /* position: relative !important;
+  top: -25px !important;
+  right: -20px !important; */
+  width: 100%;
+  border: none;
+}
+.btn-success:hover,.btn-success:active ,.btn-success:visited,.btn-success:future {
+    background-color: rgb(95, 104, 201) !important;
+    outline: none;
+    width: 100%;
+    border: none;
+  }
+span :hover{
+    color: blue !important;
+    cursor: pointer;
+}
+.onaddpostmessage{
+    /* color: rgb(6, 184, 6); */
+    font-size: 12px;
 }

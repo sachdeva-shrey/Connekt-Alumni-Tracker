@@ -1,4 +1,5 @@
 <body>
+    <div class="bg"></div>
     <app-adminnav></app-adminnav>
     <div class="nav-head">
         <h3>Alumni Association</h3>
@@ -27,6 +28,10 @@
                 <div>
                     <p class="eventdetailshead1">Time</p>
                     <p>{{ document.payload.doc.data().time}}</p>
+                </div>
+                <div>
+                    <p class="eventdetailshead1">More</p>
+                    <a>Click here</a>
                 </div>
             </div>
                 <button class="delete-event btn btn-danger" (click)="deleteevent(document)"> Delete Event</button>

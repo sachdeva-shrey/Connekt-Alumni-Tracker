@@ -1,40 +1,80 @@
 <app-alumninav></app-alumninav>
 
 <body>
-  <div class="grid">
-    <div class="grid-item sidebar">
-      <img class="profile" src="../../../assets/img/profile.jpg" alt="gmail">
-       <!-- Add edit+redirect icon -->
-      <h4 style="margin-top: 30px">Shrey Sachdeva</h4>
-      <p>SRM Institue of Science and Technology</p>
-      <p>Batch of 2022</p>
-      <p>Computer Science and Engineering</p>
-    </div>
-    <div class="grid-item content">
-      <h6>NEWS FEED</h6>
-    </div>
-    <div class="grid-item aside">
-      <h6>PINBOARD</h6>
-      <hr>
-      <div class="notice">
-        <h4>Your connection, Shrey Sachdeva is attending the SIH Hackathon.</h4>
-        <div>
-          <h6>Like - Comment - Redirect</h6> 
-          <!-- To be replaced with icons -->
+    <div class="grid">
+        <div class="grid-item sidebar">
+            <img class="profile" src="../../../assets/img/profile.jpg" alt="gmail">
+            <!-- Add edit+redirect icon -->
+            <h4 style="margin-top: 30px">Shrey Sachdeva</h4>
+            <p>SRM Institue of Science and Technology</p>
+            <p>Batch of 2022</p>
+            <p>Computer Science and Engineering</p>
         </div>
-      </div>
-      <div class="notice">
-        <h4>Your connection, Shrey Sachdeva is attending the SIH Hackathon.</h4>
-        <div>
-          <h6>Like - Comment - Redirect</h6>
+        <div class="grid-item content">
+            <h6>NEWS FEED</h6>
+            <hr>
+            <div>
+                <form [formGroup]="newpostform">
+                    <textarea class="post" rows="4" placeholder="What's new?" formControlName="details"></textarea>
+                    <button class="btn btn-success" 
+                    (click)="createnewpost(newpostform)">Publish</button>
+                    <p class="text-center onaddpostmessage">{{formmessage}}</p>
+                </form>
+            </div>
+            <div class="feed" *ngFor="let document of documents">
+                <div>
+                    <img class="face-1" src="../../../assets/img/face1.jpg" alt="">
+                </div>
+                <div>
+                    <h4>
+                        Yash Copra says
+                    </h4>
+                    <p>
+                        {{document.payload.doc.data().details}}
+                    </p>
+                    <div>
+                        <span class="likesharecmnt" style="margin-top: 10px"><a>Apply</a> - <a>Share</a> - <a>Tag</a></span>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
-      </div>
-      <div class="notice">
-        <h4>Your connection, Shrey Sachdeva is attending the SIH Hackathon.</h4>
-        <div>
-          <h6>Like - Comment - Redirect</h6>
+        <div class="grid-item aside">
+            <h6>PINBOARD</h6>
+            <hr>
+            <div class="notice">
+                <h4>Your connection, Shrey Sachdeva is attending the SIH Hackathon.</h4>
+                <div>
+                    <h6>Like - Comment - Redirect</h6>
+                    <!-- To be replaced with icons -->
+                </div>
+            </div>
+            <div class="notice">
+                <h4>Your connection, Shrey Sachdeva is attending the SIH Hackathon.</h4>
+                <div>
+                    <h6>Like - Comment - Redirect</h6>
+                </div>
+            </div>
+            <div class="notice">
+                <h4>Your connection, Shrey Sachdeva is attending the SIH Hackathon.</h4>
+                <div>
+                    <h6>Like - Comment - Redirect</h6>
+                </div>
+            </div>
+            <div class="notice">
+                <h4>Your connection, Shrey Sachdeva is attending the SIH Hackathon.</h4>
+                <div>
+                    <h6>Like - Comment - Redirect</h6>
+                </div>
+            </div>
+            <div class="notice">
+                <h4>Your connection, Shrey Sachdeva is attending the SIH Hackathon.</h4>
+                <div>
+                    <h6>Like - Comment - Redirect</h6>
+                </div>
+            </div>
+
         </div>
-      </div>
     </div>
-  </div>
 </body>

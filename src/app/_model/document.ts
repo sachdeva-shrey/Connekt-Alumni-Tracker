@@ -18,3 +18,8 @@ export interface eventtype{
     time :string,
     venue :string;
 }
+export interface posttype{
+    $key :string,
+    title : string,
+    details : string
+}

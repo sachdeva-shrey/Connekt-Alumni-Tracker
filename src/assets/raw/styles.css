@@ -1,8 +1,14 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+
 body {
     background-color: #F9F9F9;
-}
-
-.nav-head {
+  
+  }
+  
+  .nav-head {
     position: absolute;
     top: 0;
     height: 8%;
@@ -11,13 +17,13 @@ body {
     box-shadow: 0px 0px 8px 2px #ccc;
     padding-left: 80px;
     padding-top: 10px;
-}
-
-.fa-2x {
+  }
+  
+  .fa-2x {
     font-size: 2em;
-}
-
-.fa {
+  }
+  
+  .fa {
     position: relative;
     display: table-cell;
     width: 60px;
@@ -25,43 +31,42 @@ body {
     text-align: center;
     vertical-align: middle;
     font-size: 20px;
-}
-
-
-.main-menu:hover,
-nav.main-menu.expanded {
+  }
+  
+  
+  .main-menu:hover,
+  nav.main-menu.expanded {
     width: 250px;
     overflow: visible;
-}
-
-.main-menu {
+  }
+  
+  .main-menu {
+    position: fixed;
     background: #323A47;
     border-right: 1px solid #e5e5e5;
-    position: absolute;
     top: 0;
-    bottom: 0;
     height: 100%;
     left: 0;
     width: 60px;
     overflow: hidden;
     -webkit-transition: width .2s linear;
     transition: width .2s linear;
-    transform: translateZ(0) scale(1, 1);
+    transform : translateZ(0) scale(1, 1);
     -webkit-transform: translateZ(0) scale(1, 1);
     z-index: 1000;
-}
-
-.main-menu>ul {
+  }
+  
+  .main-menu>ul {
     margin: 7px 0;
-}
-
-.main-menu li {
+  }
+  
+  .main-menu li {
     position: relative;
     display: block;
     width: 250px;
-}
-
-.main-menu li>a {
+  }
+  
+  .main-menu li>a {
     position: relative;
     display: table;
     border-collapse: collapse;
@@ -70,14 +75,14 @@ nav.main-menu.expanded {
     font-family: arial;
     font-size: 14px;
     text-decoration: none;
-    transform: translateZ(0) scale(1, 1);
+    transform : translateZ(0) scale(1, 1);
     -webkit-transform: translateZ(0) scale(1, 1);
     -webkit-transition: all .1s linear;
     transition: all .1s linear;
-
-}
-
-.main-menu .nav-icon {
+  
+  }
+  
+  .main-menu .nav-icon {
     position: relative;
     display: table-cell;
     width: 60px;
@@ -85,118 +90,112 @@ nav.main-menu.expanded {
     text-align: center;
     vertical-align: middle;
     font-size: 18px;
-}
-
-.main-menu .nav-text {
+  }
+  
+  .main-menu .nav-text {
     position: relative;
     display: table-cell;
     vertical-align: middle;
     width: 190px;
     font-family: 'Titillium Web', sans-serif;
-}
-
-.main-menu>ul.logout {
+  }
+  
+  .main-menu>ul.logout {
     position: absolute;
     left: 0;
     bottom: 0;
-}
-
-.no-touch .scrollable.hover {
+  }
+  
+  .no-touch .scrollable.hover {
     overflow-y: hidden;
-}
-
-.no-touch .scrollable.hover:hover {
+  }
+  
+  .no-touch .scrollable.hover:hover {
     overflow-y: auto;
     overflow: visible;
-}
-
-a:hover,
-a:focus {
+  }
+  
+  a:hover,
+  a:focus {
     text-decoration: none;
-}
-
-nav {
+  }
+  
+  nav {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
-}
-
-nav ul,
-nav li {
+  }
+  
+  nav ul,
+  nav li {
     outline: 0;
     margin: 0;
     padding: 0;
-}
-
-.main-menu li:hover>a,
-nav.main-menu li.active>a,
-.dropdown-menu>li>a:hover,
-.dropdown-menu>li>a:focus,
-.dropdown-menu>.active>a,
-.dropdown-menu>.active>a:hover,
-.dropdown-menu>.active>a:focus,
-.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,
-.dashboard-page nav.dashboard-menu ul li.active a {
+  }
+  
+  .main-menu li:hover>a,
+  nav.main-menu li.active>a,
+  .dropdown-menu>li>a:hover,
+  .dropdown-menu>li>a:focus,
+  .dropdown-menu>.active>a,
+  .dropdown-menu>.active>a:hover,
+  .dropdown-menu>.active>a:focus,
+  .no-touch .dashboard-page nav.dashboard-menu ul li:hover a,
+  .dashboard-page nav.dashboard-menu ul li.active a {
     color: #fff;
     background-color: #727CF5;
-}
-
-h4 {
+  }
+  
+  h4 {
     margin: 0px 100px 50px 100px;
     padding-top: 100px;
     color: #323A47;
-}
-
-h2 {
+  }
+  
+  h2 {
     font-size: 34px;
     color: #727CF5;
-}
-
-.stat-cards {
+  }
+  
+  .stat-cards {
     display: flex;
     margin-left: 70px;
-}
-
-.card {
+  }
+  
+  .card {
     height: 150px;
     width: 250px;
     background-color: #fff;
     margin-left: 80px;
     padding-top: 30px;
-}
-
-#auth {
+  }  
+  #auth {
     margin-left: 100px;
     text-align: left;
+  }
+  
+  th {
+    padding-left: 100px;
+    padding-bottom: 10px;
+    text-align: center !important;
+  }
+  
+  td {
+    padding-left: 100px;
+    padding-bottom: 10px;
+  }
+  tr{
+      width: 100%;
+  }
+
+h3 {
+  font-size: 18px;
+  margin: 7px;
 }
 
-.event-cards {
-    margin-left: 100px;
-    display: flex;
-    background-color: #fff;
-    padding: 20px;
-    width: 85%;
-}
-
-.event-cards>div:nth-child(2) {
-    margin-left: 50px;
-}
-
-.event-details {
-    display: flex;
-}
-
-.event-details>div {
-    margin-right: 30px;
-}
-
-.add-event {
-    margin-left: 100px;
-    margin-bottom: 30px;
-}
-
-.delete-event {
-    margin-left: 30px;
+.chart {
+  height: 40px;
+  width: auto;
 }

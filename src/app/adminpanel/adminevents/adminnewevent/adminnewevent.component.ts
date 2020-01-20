@@ -25,7 +25,7 @@ export class AdminneweventComponent implements OnInit {
     .then(()=>{
         form.reset();
         alert('Sucessfully added event!');
-        this.router.navigate(['/adminpanel']);
+        this.router.navigate(['/adminpanel/events']);
     })
 
 }

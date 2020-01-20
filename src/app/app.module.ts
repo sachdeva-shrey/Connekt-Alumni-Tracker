@@ -28,6 +28,14 @@ import { AlumninavComponent } from './alumnihomepage/alumninav/alumninav.compone
 import { AdminneweventComponent } from './adminpanel/adminevents/adminnewevent/adminnewevent.component';
 import { CommonnavbarComponent } from './home/commonnavbar/commonnavbar.component';
 import { CommonfooterComponent } from './home/commonfooter/commonfooter.component';
+import { AdminauthComponent } from './adminpanel/adminauth/adminauth.component';
+import { AlumnieventsComponent } from './alumnihomepage/alumnievents/alumnievents.component';
+import { AllalumniComponent } from './adminpanel/allalumni/allalumni.component';
+import { StudentComponent } from './student/student.component';
+import { StudentnavComponent } from './student/studentnav/studentnav.component';
+import { AlumniprofileComponent } from './alumnihomepage/alumniprofile/alumniprofile.component';
+import { StudentprofileComponent } from './student/studentprofile/studentprofile.component';
+import { AdminloginComponent } from './adminpanel/adminlogin/adminlogin.component';
   
 @NgModule({
   declarations: [
@@ -46,6 +54,14 @@ import { CommonfooterComponent } from './home/commonfooter/commonfooter.componen
     AdminneweventComponent,
     CommonnavbarComponent,
     CommonfooterComponent,
+    AdminauthComponent,
+    AlumnieventsComponent,
+    AllalumniComponent,
+    StudentComponent,
+    StudentnavComponent,
+    AlumniprofileComponent,
+    StudentprofileComponent,
+    AdminloginComponent,
   ],
   imports: [
     BrowserModule,
