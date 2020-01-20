@@ -31,6 +31,7 @@ import { CommonfooterComponent } from './home/commonfooter/commonfooter.componen
 import { AdminauthComponent } from './adminpanel/adminauth/adminauth.component';
 import { AlumnieventsComponent } from './alumnihomepage/alumnievents/alumnievents.component';
 import { AllalumniComponent } from './adminpanel/allalumni/allalumni.component';
+import { StudentComponent } from './student/student.component';
   
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { AllalumniComponent } from './adminpanel/allalumni/allalumni.component';
     AdminauthComponent,
     AlumnieventsComponent,
     AllalumniComponent,
+    StudentComponent,
   ],
   imports: [
     BrowserModule,
