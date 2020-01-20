@@ -24,6 +24,11 @@ import { AdminloginComponent} from './adminpanel/adminlogin/adminlogin.component
 import { StudentComponent } from './student/student.component';
 import { StudentprofileComponent } from './student/studentprofile/studentprofile.component';
 import { StudentloginComponent } from './student/studentlogin/studentlogin.component';
+
+// error 404
+import { Error404Component } from './error404/error404.component';
+
+
 const routes: Routes = [
     // Login 
     { path : 'alumnilogin' , component : LoginComponent},
@@ -50,7 +55,8 @@ const routes: Routes = [
     { path :'student' ,component : StudentComponent},
     { path :'student/profile' ,component : StudentprofileComponent} ,
 
-
+    //error404
+    { path :'**' ,component : Error404Component} ,
 
 
     { path: '', redirectTo: 'home', pathMatch: 'full' }

@@ -39,6 +39,7 @@ import { AdminloginComponent } from './adminpanel/adminlogin/adminlogin.componen
 import { StudentloginComponent } from './student/studentlogin/studentlogin.component';
 import { AdminchartsComponent } from './adminpanel/admincharts/admincharts.component';
 import { Chartno2Component } from './adminpanel/admincharts/chartno2/chartno2.component';
+import { Error404Component } from './error404/error404.component';
   
 @NgModule({
   declarations: [
@@ -68,6 +69,7 @@ import { Chartno2Component } from './adminpanel/admincharts/chartno2/chartno2.co
     StudentloginComponent,
     AdminchartsComponent,
     Chartno2Component,
+    Error404Component,
   ],
   imports: [
     BrowserModule,
