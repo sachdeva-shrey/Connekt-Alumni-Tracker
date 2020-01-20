@@ -38,6 +38,7 @@ import { StudentprofileComponent } from './student/studentprofile/studentprofile
 import { AdminloginComponent } from './adminpanel/adminlogin/adminlogin.component';
 import { StudentloginComponent } from './student/studentlogin/studentlogin.component';
 import { AdminchartsComponent } from './adminpanel/admincharts/admincharts.component';
+import { Chartno2Component } from './adminpanel/admincharts/chartno2/chartno2.component';
   
 @NgModule({
   declarations: [
@@ -66,6 +67,7 @@ import { AdminchartsComponent } from './adminpanel/admincharts/admincharts.compo
     AdminloginComponent,
     StudentloginComponent,
     AdminchartsComponent,
+    Chartno2Component,
   ],
   imports: [
     BrowserModule,
