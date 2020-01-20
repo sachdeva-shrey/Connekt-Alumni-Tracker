@@ -15,10 +15,7 @@ nav {
   /* background-color: #727CF5; */
   height: 55px;
 }
-.nav-logo{
-    z-index: 100;
-    width: 200px;
-}
+
 .nav>div:nth-child(2) {
   display: flex;
   margin-left: 50%
