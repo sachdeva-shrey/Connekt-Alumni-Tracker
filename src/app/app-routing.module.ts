@@ -19,7 +19,7 @@ import { AlumniprofileComponent } from './alumnihomepage/alumniprofile/alumnipro
 // Login Components
 import { LoginComponent } from './login/login.component';
 import { VerifyemailComponent } from './login/verifyemail/verifyemail.component';
-import { LoginofficialComponent } from './Loginofficial/Loginofficial.component';
+import { AdminloginComponent} from './adminpanel/adminlogin/adminlogin.component'
 // STudent
 import { StudentComponent } from './student/student.component';
 import { StudentprofileComponent } from './student/studentprofile/studentprofile.component';
@@ -27,7 +27,7 @@ const routes: Routes = [
     // Login 
     { path : 'alumnilogin' , component : LoginComponent},
     { path : 'alumnilogin/verifyemail' , component : VerifyemailComponent},
-    { path : 'officiallogin' , component : LoginofficialComponent},
+    { path : 'adminlogin' , component : AdminloginComponent},
     { path : 'notable-alumni' , component : NotableAlumniComponent},  
     //alumni
     { path : 'alumnipanel' , component :AlumnidashboardComponent},   

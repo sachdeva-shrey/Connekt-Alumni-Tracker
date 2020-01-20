@@ -35,7 +35,7 @@ import { StudentComponent } from './student/student.component';
 import { StudentnavComponent } from './student/studentnav/studentnav.component';
 import { AlumniprofileComponent } from './alumnihomepage/alumniprofile/alumniprofile.component';
 import { StudentprofileComponent } from './student/studentprofile/studentprofile.component';
-import { LoginofficialComponent } from './loginofficial/loginofficial.component';
+import { AdminloginComponent } from './adminpanel/adminlogin/adminlogin.component';
   
 @NgModule({
   declarations: [
@@ -61,7 +61,7 @@ import { LoginofficialComponent } from './loginofficial/loginofficial.component'
     StudentnavComponent,
     AlumniprofileComponent,
     StudentprofileComponent,
-    LoginofficialComponent,
+    AdminloginComponent,
   ],
   imports: [
     BrowserModule,
