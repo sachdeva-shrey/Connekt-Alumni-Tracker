@@ -150,3 +150,10 @@ h2 {
     width: auto;
   }
 }
+
+
+.logo {
+  height: 40px;
+  width: auto;
+  margin: 15px;
+}
