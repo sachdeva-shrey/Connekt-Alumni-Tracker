@@ -1,9 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
-
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
 
 .loader {
     border: 16px solid #f3f3f3; /* Light grey */
