@@ -41,6 +41,7 @@ import { AdminchartsComponent } from './adminpanel/admincharts/admincharts.compo
 import { Chartno2Component } from './adminpanel/admincharts/chartno2/chartno2.component';
 import { Error404Component } from './error404/error404.component';
 import { WorldmapComponent } from './adminpanel/worldmap/worldmap.component';
+import { UpdatedetailsComponent } from './alumnihomepage/updatedetails/updatedetails.component';
   
 @NgModule({
   declarations: [
@@ -72,6 +73,7 @@ import { WorldmapComponent } from './adminpanel/worldmap/worldmap.component';
     Chartno2Component,
     Error404Component,
     WorldmapComponent,
+    UpdatedetailsComponent,
   ],
   imports: [
     BrowserModule,

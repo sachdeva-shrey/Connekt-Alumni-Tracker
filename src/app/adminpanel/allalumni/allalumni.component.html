@@ -5,15 +5,19 @@
 <table id="auth">
     <tr>
         <th>Name</th>
-        <th>College</th>
-        <th>Batch</th>
         <th>Reg. No.</th>
+        <th>Batch</th>
+        <th>Branch</th>
+        <th>Phone no</th>
+        <th>Current Location</th>
     </tr>
     <tr *ngFor="let document of documents1">
-        <td>{{ document.payload.doc.data().firstname }}</td>
-        <td>{{ document.payload.doc.data().college }}</td>
+        <td>{{ document.payload.doc.data().fullname }}</td>
+        <td>{{ document.payload.doc.data().regno }}</td>
         <td>{{ document.payload.doc.data().year }}</td>
-        <td>{{ document.payload.doc.data().regno}}</td>
+        <td>{{ document.payload.doc.data().branch}}</td>
+        <td>{{ document.payload.doc.data().phoneno}}</td>
+        <td>{{ document.payload.doc.data().currentloc}}</td>
     </tr>
 </table>
 </div>

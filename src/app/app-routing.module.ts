@@ -29,6 +29,7 @@ import { StudentloginComponent } from './student/studentlogin/studentlogin.compo
 // error 404
 import { Error404Component } from './error404/error404.component';
 import { from } from 'rxjs';
+import { UpdatedetailsComponent } from './alumnihomepage/updatedetails/updatedetails.component';
 
 
 const routes: Routes = [
@@ -45,6 +46,7 @@ const routes: Routes = [
     { path : 'alumnipanel' , component :AlumnidashboardComponent},   
     { path : 'alumnipanel/events' , component :AlumnieventsComponent}, 
     { path : 'alumnipanel/profile' , component :AlumniprofileComponent}, 
+    { path : 'alumnipanel/updateprofile' , component :UpdatedetailsComponent}, 
     //admin
     { path : 'adminpanel' , component : AdminpanelComponent},   
     { path : 'adminpanel/dashboard' , component : AdmindashboardComponent},   

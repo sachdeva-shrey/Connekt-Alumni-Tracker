@@ -1,0 +1,50 @@
+    
+    <app-alumninav></app-alumninav>
+
+<body>
+
+    <div class="login-box">
+        <form [formGroup]="updateform">
+            <div class="form-group">
+                <label for="fullname">First Name</label><br>
+                <input class="form-control" type="text" name="fullname" id="fullname" formControlName="fullname">
+            </div>
+            <div class="form-group">
+                <label for="regno">Registeration No:</label><br>
+                <input class="form-control" type="text" name="regno" id="regno" formControlName="regno">
+            </div>
+            <div class="form-group">
+                <label for="branch">Branch:</label><br>
+                <input class="form-control" type="text" name="branch" id="branch" formControlName="branch">
+            </div>
+            <div class="form-group">
+                <label for="year">Passout year:</label><br>
+                <input class="form-control" type="year" name="year" id="year" formControlName="year">
+            </div>
+            <div class="form-group">
+                <label for="phoneno">Phone no</label><br>
+                <input class="form-control" type="text" name="phoneno" id="phoneno" formControlName="phoneno">
+            </div>
+            <div class="form-group">
+                <label for="currentloc">Current Location</label><br>
+                <input class="form-control" type="text" name="currentloc" id="currentloc" formControlName="currentloc">
+            </div>
+            <div class="form-group">
+                <label for="workstatus">Designation</label><br>
+                <input class="form-control" type="text" name="workstatus" id="workstatus" formControlName="workstatus">
+            </div>
+            <div class="form-group">
+                <label for="linkedinid">Linkedin ID</label><br>
+                <input class="form-control" type="text" name="linkedinid" id="linkedinid" formControlName="linkedinid">
+            </div>
+            <div class="form-group">
+                <label for="facebookid">Facebook ID</label><br>
+                <input class="form-control" type="text" name="facebookid" id="facebookid" formControlName="facebookid">
+            </div>
+               
+            <button type="submit" (click)="Updateprofile(updateform)" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+
+
