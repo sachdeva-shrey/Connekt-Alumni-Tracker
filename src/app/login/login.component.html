@@ -7,7 +7,6 @@
 						<h1 class="alumni-reg-heading">Alumni Registeration</h1>
 							<!-- Name -->
 							<div class="row">
-
 								<div class="col-md-6">
 									<div class="form-group">
 										<label for="firstname">First Name</label>
@@ -20,7 +19,6 @@
 										<input type="text" class="form-control" id="lastname" formControlName="lastname">
 									</div>
 								</div>
-
 							</div>
 
                             <!-- College -->
@@ -41,7 +39,6 @@
 
 							<!-- Course and Year -->
 							<div class="row">
-
 								<div class="col-md-6">
 									<div class="form-group">
 										<label for="course">Course</label>
@@ -54,13 +51,12 @@
                                         <input type="text" class="form-control" id="year" formControlName="year">
 									</div>
 								</div>
-
 							</div>
 
 							<!-- Email -->
 							<div class="form-group">
 								<label for="email">College Email address</label>
-								<input type="email" class="form-control" id="uemail" formControlName="uemail">
+								<input type="email" class="form-control" id="uemail" formControlName="uemail" ng-model="email" ngModel pattern ="[\w._%+-]+@srmist.edu.in">
 							</div>
 
 							<!-- Password -->
