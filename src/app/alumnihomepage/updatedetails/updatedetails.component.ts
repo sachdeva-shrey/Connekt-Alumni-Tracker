@@ -27,7 +27,7 @@ export class UpdatedetailsComponent implements OnInit {
   Updateprofile(form):void{
     this._documentService.Addupdateddetails(form.value)
         form.reset();
-        alert('Sucessfully added event!');
+        alert('Sucessfully updated profile!');
         this.router.navigate(['/alumnipanel']);
 }
 }

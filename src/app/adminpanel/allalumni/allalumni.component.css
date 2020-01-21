@@ -178,14 +178,15 @@ h2 {
 }
 
 th {
-  padding-left: 100px;
+  padding-left: 60px;
   padding-bottom: 10px;
   font-family: 'Bahnschrift';
 }
 
 td {
-  padding-left: 100px;
-  padding-bottom: 10px;
+  padding-left: 60px;
+  padding-bottom: 16px;
+  text-align: left;
 }
 
 tr {
