@@ -11,6 +11,7 @@ import { AdmineventsComponent } from './adminpanel/adminevents/adminevents.compo
 import { AdminneweventComponent } from './adminpanel/adminevents/adminnewevent/adminnewevent.component';
 import { AdminauthComponent } from './adminpanel/adminauth/adminauth.component';
 import { AllalumniComponent } from './adminpanel/allalumni/allalumni.component';
+import { WorldmapComponent } from './adminpanel/worldmap/worldmap.component';
 
 // Alumni Dashboard
 import { AlumnidashboardComponent } from './alumnihomepage/alumnidashboard/alumnidashboard.component';
@@ -27,6 +28,7 @@ import { StudentloginComponent } from './student/studentlogin/studentlogin.compo
 
 // error 404
 import { Error404Component } from './error404/error404.component';
+import { from } from 'rxjs';
 
 
 const routes: Routes = [
@@ -50,6 +52,8 @@ const routes: Routes = [
     { path : 'adminpanel/events/create' , component : AdminneweventComponent},  
     { path : 'adminpanel/auth' , component : AdminauthComponent},  
     { path : 'adminpanel/alumnidata' , component : AllalumniComponent},  
+    { path : 'adminpanel/worldmap' , component : WorldmapComponent},  
+
     { path : 'home' , component : HomeComponent}, 
 
     //student
