@@ -49,11 +49,11 @@ export class StudentloginComponent implements OnInit {
     }
   
     submitDocument(form):void{
-        this._documentService.AddDocument(form.value);
+        this._documentService.AddDocument1(form.value);
     }
  
     Signin(form):void {
-        this._documentService.SignIn(form.value.alumniemail, form.value.alumnipassword);
+        this._documentService.SignIn1(form.value.alumniemail, form.value.alumnipassword);
     }
   
   }

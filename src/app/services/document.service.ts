@@ -1,5 +1,5 @@
 import { Injectable, NgZone } from "@angular/core";
-import { Document, eventtype, posttype } from "../_model/document";
+import { Document, eventtype, posttype, Document1} from "../_model/document";
 import { AngularFirestore } from "@angular/fire/firestore";
 import { AngularFireAuth } from "@angular/fire/auth";
 import { Observable } from "rxjs";
@@ -157,6 +157,53 @@ export class DocumentService {
         );
     });
   }
+// Student----------------
+
+/* Add Document */
+AddDocument1(document: Document) {
+    this.angularFireAuth.auth
+      .createUserWithEmailAndPassword(document.uemail, document.upassword)
+      .then(res => {
+        this.SendVerificationMail();
+        return new Promise<any>((resolve, reject) => {
+          this.firestore
+            .collection("student")
+            .add(document)
+            .then(
+              res => {
+                resolve(res);
+              },
+              err => reject(err)
+            );
+        });
+      })
+      .catch(error => {
+        alert(error.message);
+      });
+  }
+  SignIn1(email: string, password: string) {
+    this.angularFireAuth.auth
+      .signInWithEmailAndPassword(email, password)
+      .then(res => {
+        if (res.user.emailVerified !== true) {
+          this.SendVerificationMail();
+          window.alert("Email id is not yet verified!");
+        } else {
+          this.router.navigate(["/student"]);
+        }
+      })
+      .catch(err => {
+        alert(err.message);
+      });
+  }
+  Getallalumni() {
+    return this.firestore.collection("acceptedusersdb").snapshotChanges();
+  }
+  Getallalumni1() {
+    return this.firestore.collection("student").snapshotChanges();
+  }
+
+
 
   //closing tag
 }

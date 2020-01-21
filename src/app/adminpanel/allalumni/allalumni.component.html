@@ -1,2 +1,37 @@
 <app-adminnav></app-adminnav>
 
+<h4 style="margin-top: 50px;">All Alumni</h4>
+<div class="invite-table">
+<table id="auth">
+    <tr>
+        <th>Name</th>
+        <th>College</th>
+        <th>Batch</th>
+        <th>Reg. No.</th>
+    </tr>
+    <tr *ngFor="let document of documents1">
+        <td>{{ document.payload.doc.data().firstname }}</td>
+        <td>{{ document.payload.doc.data().college }}</td>
+        <td>{{ document.payload.doc.data().year }}</td>
+        <td>{{ document.payload.doc.data().regno}}</td>
+    </tr>
+</table>
+</div>
+
+<h4 style="margin-top: 50px;">All Students</h4>
+<div class="invite-table">
+<table id="auth">
+    <tr>
+        <th>Name</th>
+        <th>College</th>
+        <th>Batch</th>
+        <th>Reg. No.</th>
+    </tr>
+    <tr *ngFor="let document of documents2">
+        <td>{{ document.payload.doc.data().firstname }}</td>
+        <td>{{ document.payload.doc.data().college }}</td>
+        <td>{{ document.payload.doc.data().year }}</td>
+        <td>{{ document.payload.doc.data().regno}}</td>
+    </tr>
+</table>
+</div>
