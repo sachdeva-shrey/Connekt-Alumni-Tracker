@@ -4,11 +4,11 @@
 }
 
 #home-section {
-    background-image: url(../../assets/img/SRMUB.jpg);
+    background:linear-gradient(0deg, rgba(0, 0,0, 0.2), rgba(0, 0, 0, 0.2)),  url(../../assets/img/alumni-767x349.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+
     width: 100%;
-    filter: blur(25%);
 }
 
 .mx-auto p {
