@@ -99,7 +99,7 @@ export class DocumentService {
           this.SendVerificationMail();
           window.alert("Email id is not yet verified!");
         } else {
-          this.router.navigate(["/adminpanel"]);
+          this.router.navigate(["/alumnipanel"]);
         }
       })
       .catch(err => {
