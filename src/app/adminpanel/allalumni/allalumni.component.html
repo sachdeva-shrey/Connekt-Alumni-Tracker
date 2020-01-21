@@ -10,6 +10,7 @@
         <th>Branch</th>
         <th>Phone no</th>
         <th>Current Location</th>
+        <th>Linkedin ID</th>
     </tr>
     <tr *ngFor="let document of documents1">
         <td>{{ document.payload.doc.data().fullname }}</td>
@@ -18,6 +19,7 @@
         <td>{{ document.payload.doc.data().branch}}</td>
         <td>{{ document.payload.doc.data().phoneno}}</td>
         <td>{{ document.payload.doc.data().currentloc}}</td>
+        <td>{{ document.payload.doc.data().linkedinid}}</td>
     </tr>
 </table>
 </div>
