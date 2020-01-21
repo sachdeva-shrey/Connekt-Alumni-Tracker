@@ -1,0 +1,77 @@
+:root {
+    --primary-color-dark: #323A47;
+    --background-color: #F9F9F9;
+    --primary-blue: #727CF5;
+  }
+  
+  @font-face {
+    font-family: 'Bahnschrift';
+    src: url(../../../assets/fonts/bahnschrift.ttf);
+  }
+  
+  @font-face {
+    font-family: 'SF-UI';
+    src: url(../../../assets/fonts/SF-UI-Display-Regular.otf);
+  }
+  
+  body {
+    background-color: #F9F9F9;
+    width: 100%;
+    height: 130%;
+    padding-top: 4%;
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+  
+  label {
+    font-family: 'SF-UI';
+    font-size: 12px;
+    color: #323A47;
+  }
+  
+  .login-box {
+      padding:60px;
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+      transition: 0.2s ease-in;
+    }
+  
+  .form-control {
+    width: 100%;
+  }
+  
+  input:focus {
+    outline: none !important;
+    border: 1px solid #727CF5;
+    box-shadow: 0 0 2px #323A47;
+  }
+  
+  .login-box .alumni-reg-heading {
+    font-size: 30px;
+    font-family: 'Bahnschrift';
+    border-left: 4px solid #727CF5;
+    padding-left: 20px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    margin-bottom: 10px;
+  }
+  
+  .official-login {
+    margin: 2% auto;
+  }
+  
+  button[type="submit"] {
+    background-color: #727CF5;
+    border: none;
+    width: 100%;
+    margin-top: 20px;
+    font-family: 'SF-UI';
+    letter-spacing: 1px;
+  }
+  
+  button:hover,
+  button:active,
+  button:focus {
+    background-color: rgb(88, 97, 196) !important;
+  }

@@ -1,5 +1,5 @@
 import { Injectable, NgZone } from "@angular/core";
-import { Document, eventtype, posttype, Document1} from "../_model/document";
+import { Document, eventtype, posttype, Document1,Updated } from "../_model/document";
 import { AngularFirestore } from "@angular/fire/firestore";
 import { AngularFireAuth } from "@angular/fire/auth";
 import { Observable } from "rxjs";
@@ -157,10 +157,10 @@ export class DocumentService {
         );
     });
   }
-// Student----------------
+  // Student----------------
 
-/* Add Document */
-AddDocument1(document: Document) {
+  /* Add Document */
+  AddDocument1(document: Document) {
     this.angularFireAuth.auth
       .createUserWithEmailAndPassword(document.uemail, document.upassword)
       .then(res => {
@@ -197,13 +197,16 @@ AddDocument1(document: Document) {
       });
   }
   Getallalumni() {
-    return this.firestore.collection("acceptedusersdb").snapshotChanges();
+    return this.firestore.collection("updatedusersdb").snapshotChanges();
   }
   Getallalumni1() {
     return this.firestore.collection("student").snapshotChanges();
   }
 
-
+  /* Add Document */
+  Addupdateddetails(document: Updated) {
+    this.firestore.collection("updatedusersdb").add(document);
+  }
 
   //closing tag
 }

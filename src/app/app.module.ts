@@ -40,6 +40,8 @@ import { StudentloginComponent } from './student/studentlogin/studentlogin.compo
 import { AdminchartsComponent } from './adminpanel/admincharts/admincharts.component';
 import { Chartno2Component } from './adminpanel/admincharts/chartno2/chartno2.component';
 import { Error404Component } from './error404/error404.component';
+import { WorldmapComponent } from './adminpanel/worldmap/worldmap.component';
+import { UpdatedetailsComponent } from './alumnihomepage/updatedetails/updatedetails.component';
   
 @NgModule({
   declarations: [
@@ -70,6 +72,8 @@ import { Error404Component } from './error404/error404.component';
     AdminchartsComponent,
     Chartno2Component,
     Error404Component,
+    WorldmapComponent,
+    UpdatedetailsComponent,
   ],
   imports: [
     BrowserModule,
